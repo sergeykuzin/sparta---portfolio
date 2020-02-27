@@ -1,0 +1,53 @@
+@mixin desktop {
+  @media screen and (min-width: $desktop-width) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media screen and (max-width: $laptop-width) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (min-width: $mobile-width) {
+    @content;
+  }
+}
+
+@mixin mobile-width-only {
+  @media screen and (max-width: $tablet-width - 1) {
+    @content;
+  }
+}
+
+@mixin tablet-width-only {
+  @media screen and (min-width: $tablet-width)
+                and (max-width: $desktop-width - 1) {
+    @content;
+  }
+}
+
+@mixin mobile-tablet-width-only {
+  @media screen and (max-width: $desktop-width - 1) {
+    @content;
+  }
+}
+
+@mixin retina-bg {
+  @media (min-resolution: 144dpi),
+         (min-resolution: 1.5dppx) {
+    @content;
+  }
+}
+
+@function rem($px) {
+  @return $px / $basic-font-size + 0rem;
+}
