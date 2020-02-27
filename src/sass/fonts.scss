@@ -1,9 +1,79 @@
 @font-face {
-  font-weight: 500;
-  font-family: "Muller";
+  font-weight: 400;
+  font-family: "Besom";
   font-style: normal;
   font-display: swap;
-  src: local("Muller Medium"),
-    local("Muller-Medium"),
-    url("../fonts/muller-medium.woff") format("woff");
+  src: local("Besom"),
+    url("../fonts/besom.woff") format("woff"),
+    url("../fonts/besom.woff2") format("woff2");
+}
+
+@font-face {
+  font-weight: 300;
+  font-family: "Core Sans E 35 Light Regular";
+  font-style: normal;
+  font-display: swap;
+  src: local("Core Sans E 35 Light Regular"),
+    url("../fonts/coresanse-35light.woff") format("woff"),
+    url("../fonts/coresanse-35light.woff2") format("woff2");
+}
+
+@font-face {
+  font-weight: 300;
+  font-family: "Core Sans E 35 Light Italic";
+  font-style: italic;
+  font-display: swap;
+  src: local("Core Sans E 35 Light Italic"),
+    url("../fonts/coresanse-35lightit.woff") format("woff"),
+    url("../fonts/coresanse-35lightit.woff2") format("woff2");
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: "Core Sans E 45 Regular Regular";
+  font-style: normal;
+  font-display: swap;
+  src: local("Core Sans E 45 Regular Regular"),
+    url("../fonts/coresanse-45regular.woff") format("woff"),
+    url("../fonts/coresanse-45regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: "Core Sans E 55 Medium Regular";
+  font-style: normal;
+  font-display: swap;
+  src: local("Core Sans E 55 Medium Regular"),
+    url("../fonts/coresanse-55medium.woff") format("woff"),
+    url("../fonts/coresanse-55medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: "Core Sans E 65 Bold Regular";
+  font-style: normal;
+  font-display: swap;
+  src: local("Core Sans E 65 Bold Regular"),
+    url("../fonts/coresanse-65bold.woff") format("woff"),
+    url("../fonts/coresanse-65bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-weight: 800;
+  font-family: "Core Sans E 85 Heavy Regular";
+  font-style: normal;
+  font-display: swap;
+  src: local("Core Sans E 85 Heavy Regular"),
+    url("../fonts/coresanse-85heavy.woff") format("woff"),
+    url("../fonts/coresanse-85heavy.woff2") format("woff2");
+}
+
+@font-face {
+  font-weight: 900;
+  font-family: "Core Sans E 95 Black Regular";
+  font-style: normal;
+  font-display: swap;
+  src: local("Core Sans E 95 Black Regular"),
+    url("../fonts/coresanse-95black.woff") format("woff"),
+    url("../fonts/coresanse-95black.woff2") format("woff2");
 }
