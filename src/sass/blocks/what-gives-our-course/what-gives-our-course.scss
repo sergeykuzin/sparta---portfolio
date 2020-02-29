@@ -1,0 +1,273 @@
+.what-gives-our-course {
+  min-height: 929px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 195px;
+  background-image: url("../img/what-gives-our-course/main-background-desktop.png");
+  background-repeat: no-repeat;
+
+  @include tablet-width-only {
+    min-height: 985px;
+    padding-top: 170px;
+    background-image: url("../img/what-gives-our-course/main-background-tablet.png");
+  }
+
+  @include mobile-width-only {
+    min-height: 1388px;
+    padding-top: 130px;
+    background-image: url("../img/what-gives-our-course/main-background-mobile.png");
+    background-position: 50% 0;
+  }
+}
+.what-gives-our-course-wrapper,
+.what-will-not-be {
+  display: flex;
+  max-width: 1143px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include tablet-width-only {
+    max-width: 723px;
+  }
+
+  @include mobile-width-only {
+    max-width: 292px;
+  }
+}
+.what-gives-our-course-wrapper {
+  min-height: 342px;
+  margin-bottom: 65px;
+  background-image: url("../img/what-gives-our-course/red-border-desktop.png");
+  background-repeat: no-repeat;
+
+  @include tablet-width-only {
+    min-height: 367px;
+    margin-bottom: 60px;
+    background-image: url("../img/what-gives-our-course/red-border-tablet.png");
+  }
+
+  @include mobile-width-only {
+    display: flex;
+    flex-direction: column;
+    min-height: 693px;
+    background-image: url("../img/what-gives-our-course/red-border-mobile.png");
+  }
+}
+.what-gives-our-course__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 422px;
+  font-family: $core-sans-black;
+  font-size: 36px;
+  line-height: 44px;
+  text-transform: uppercase;
+  color: #fff;
+  background-image: url("../img/what-gives-our-course/what-gives-our-course-background-desktop.png");
+  background-repeat: no-repeat;
+
+  @include tablet-width-only {
+    padding-left: 30px;
+    min-width: 269px;
+    background-image: url("../img/what-gives-our-course/what-gives-our-course-background-tablet.png");
+  }
+
+  @include mobile-width-only {
+    padding: 75px 30px 0 30px;
+    min-height: 277px;
+    min-width: 289px;
+    min-height: 277px;
+    align-items: flex-start;
+    background-image: url("../img/what-gives-our-course/what-gives-our-course-background-mobile.png");
+  }
+}
+.what-gives-our-course__list {
+  display: flex;
+  padding-top: 50px;
+  padding-left: 55px;
+
+  @include tablet-width-only {
+    padding-top: 40px;
+    padding-right: 20px;
+    padding-left: 35px;
+    flex-direction: column;
+  }
+
+  @include mobile-width-only {
+    flex-direction: column;
+    padding-top: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.what-gives-our-course__item:first-child {
+  @include tablet-width-only {
+    margin-bottom: 30px;
+  }
+}
+.what-gives-our-course__item:not(:last-child) {
+  margin-right: 80px;
+
+  @include tablet-width-only {
+    margin-right: 0;
+  }
+
+  @include mobile-width-only {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
+.what-gives-our-course__item:first-child .what-gives-our-course__item-description {
+  width: 220px;
+
+  @include tablet-width-only {
+    width: auto;
+  }
+}
+.what-gives-our-course__item:last-child .what-gives-our-course__item-description {
+  width: 308px;
+
+  @include tablet-width-only {
+    width: auto;
+  }
+
+  @include mobile-width-only {
+    width: auto;
+  }
+}
+.what-gives-our-course__item-title {
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
+  padding-top: 80px;
+  font-family: $core-sans-bold;
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: $besom;
+    font-size: 72px;
+    line-height: 72px;
+    color: #53595f;
+
+    @include tablet-width-only {
+      position: relative;
+      margin-right: 15px;
+      font-size: 46px;
+      line-height: 46px;
+    }
+
+    @include mobile-width-only {
+      position: relative;
+      margin-right: 20px;
+      font-size: 46px;
+      line-height: 46px;
+    }
+  }
+
+  @include tablet-width-only {
+    padding-top: 0;
+  }
+
+  @include mobile-width-only {
+    display: flex;
+    padding-top: 0;
+    align-items: center;
+  }
+}
+.what-gives-our-course__item:first-child .what-gives-our-course__item-title:before {
+  content: "01";
+}
+.what-gives-our-course__item:last-child .what-gives-our-course__item-title:before {
+  content: "02";
+}
+.what-gives-our-course__item-description {
+  color: #fff;
+}
+.what-will-not-be {
+  display: flex;
+  align-items: center;
+
+  &:before {
+    content: "";
+    width: 130px;
+    height: 143px;
+    margin-right: 40px;
+    background-image: url("../img/what-gives-our-course/icon-exclamation-mark.png");
+    background-repeat: no-repeat;
+
+    @include tablet-width-only {
+      margin-top: -30px;
+    }
+
+    @include mobile-width-only {
+      position: absolute;
+      right: -40px;
+      top: -20px;
+    }
+  }
+
+  @include tablet-width-only {
+    align-items: flex-start;
+  }
+
+  @include mobile-width-only {
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.what-will-not-be__title {
+  margin-right: 105px;
+  font-family: $core-sans-black;
+  font-size: 36px;
+  line-height: 44px;
+  text-transform: uppercase;
+  color: #fff;
+
+  @include mobile-width-only {
+    margin-bottom: 50px;
+  }
+}
+.what-will-not-be__list {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include tablet-width-only {
+    max-width: 300px;
+  }
+}
+.what-will-not-be__item:first-child {
+  width: 350px;
+  margin-right: 85px;
+
+  @include tablet-width-only {
+    margin-right: 0;
+    margin-bottom: 35px;
+  }
+
+  @include mobile-width-only {
+    width: auto;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
+.what-will-not-be__item:last-child {
+  width: 230px;
+}
+.what-will-not-be__item-title {
+  display: block;
+  margin-bottom: 10px;
+  font-family: $core-sans-bold;
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.what-will-not-be__item-description {
+  color: #fff;
+}
