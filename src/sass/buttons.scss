@@ -1,1 +1,23 @@
+.main-button {
+  width: 307px;
+  height: 73px;
+  padding-bottom: 20px;
+  background-image: url("../img/page-header/button.png");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: 0;
+  color: #fff;
+  font-family: $core-sans-black;
+  font-size: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
 
+  &:hover {
+    background-image: url("../img/page-header/button-hover.png");
+  }
+
+  &:active {
+    padding-bottom: 15px;
+    background-image: url("../img/page-header/button-pressed.png");
+  }
+}
