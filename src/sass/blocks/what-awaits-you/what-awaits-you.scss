@@ -1,0 +1,202 @@
+.what-awaits-you {
+  max-width: 1170px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 50px;
+
+  @include tablet-width-only {
+    padding-bottom: 50px;
+  }
+
+  @include mobile-width-only {
+    padding: 50px 20px 0 20px;
+  }
+}
+.what-awaits-you-title {
+  margin-bottom: 150px;
+  text-transform: uppercase;
+}
+.section-title {
+  position: relative;
+  font-family: $core-sans-black;
+  font-size: 68px;
+  text-align: center;
+  color: #ff0000;
+
+  &:after {
+    content: 'Что вас ждёт';
+    position: absolute;
+    top: -80px;
+    left: 48%;
+    transform: translateX(-50%);
+    width: 100%;
+    font-family: "Besom",sans-serif;
+    font-size: 180px;
+    color: #eaebeb;
+    z-index: -1;
+
+    @include tablet-width-only {
+      top: -60px;
+      font-size: 130px;
+    }
+
+    @include mobile-width-only {
+      top: -50px;
+      width: 500px;
+      font-size: 100px;
+    }
+  }
+
+  @include tablet-width-only {
+    font-size: 48px;
+  }
+
+  @include mobile-width-only {
+    font-size: 36px;
+  }
+}
+.what-awaits-you__list {
+  position: relative;
+  padding-left: 50px;
+
+  &:after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    left: 200px;
+    top: -30px;
+    position: absolute;
+    background-image: url("../img/what-awaits-you/decor-dot-line.png");
+    background-repeat: no-repeat;
+
+    @include tablet-width-only {
+      left: 180px;
+      top: -50px;
+      background-image: url("../img/what-awaits-you/decor-dot-line-tablet.png");
+    }
+
+    @include mobile-width-only {
+      top: auto;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 57px;
+      height: 56px;
+      background-image: url("../img/what-awaits-you/finish-and-dot-mobile.png");
+    }
+  }
+
+  @include mobile-width-only {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    text-align: center;
+    padding-bottom: 140px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: -90px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 50px;
+      height: 60px;
+      background-image: url("../img/what-awaits-you/start-and-dot-mobile.png");
+    }
+  }
+}
+.what-awaits-you__item {
+  display: flex;
+  align-items: center;
+
+  @include mobile-width-only {
+    flex-direction: column;
+  }
+}
+.what-awaita-you__item--special-skills {
+  @include tablet-width-only {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+.what-awaits-you__image {
+  margin-right: 30px;
+
+  @include mobile-width-only {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+.what-awaits-you__item:not(:first-child) {
+  margin-top: -45px;
+
+  @include tablet-width-only {
+    margin-top: 0;
+  }
+
+  @include mobile-width-only {
+    margin-top: 0;
+  }
+}
+.what-awaits-you__item:not(:last-child) {
+  @include tablet-width-only {
+    margin-top: 30px;
+  }
+
+  @include mobile-width-only {
+    margin-bottom: 40px;
+  }
+}
+.what-awaits-you__item:nth-child(even) {
+  padding-left: 450px;
+
+  @include tablet-width-only {
+    padding-left: 0;
+  }
+
+  @include mobile-width-only {
+    padding-left: 0;
+  }
+}
+.what-awaits-you__item--constant-stress {
+  @include tablet-width-only {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: -50px;
+  }
+}
+.what-awaits-you__description--special-knowledge {
+  width: 290px;
+
+  @include mobile-width-only {
+    width: auto;
+  }
+}
+.what-awaits-you__description--special-skills,
+.what-awaits-you__description--constant-stress {
+  width: 275px;
+}
+.what-awaits-you__description--special-skills {
+  @include tablet-width-only {
+    margin-right: 40px;
+  }
+}
+.what-awaits-you__description--extreme {
+  width: 310px;
+
+  @include mobile-width-only {
+    width: auto;
+  }
+}
+
+.what-awaits-you__title {
+  display: block;
+  margin-bottom: 15px;
+  font-family: $core-sans-bold;
+  font-size: 20px;
+  color: #4d4d4d;
+}
+.what-awaits-you__text {
+  color: #4d4d4d;
+}
