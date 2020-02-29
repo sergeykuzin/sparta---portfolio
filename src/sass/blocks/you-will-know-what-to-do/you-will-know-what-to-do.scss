@@ -1,0 +1,136 @@
+.you-will-know-what-to-do {
+  max-width: 1170px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 100px 15px 125px 15px;
+
+  @include tablet-width-only {
+    max-width: 750px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+.you-will-know-what-to-do__title {
+  margin-bottom: 80px;
+  text-transform: uppercase;
+
+  &:after {
+    content: "Ты узнаешь";
+  }
+}
+.you-will-know-what-to-do__list {
+  @include tablet-width-only {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @include mobile-width-only {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.you-will-know-what-to-do__item {
+  display: flex;
+  width: 48.68%;
+  flex-wrap: wrap;
+
+  &:nth-child(even) {
+    margin-left: auto;
+    margin-top: -25px;
+
+    @include tablet-width-only {
+      margin-left: 0;
+      margin-top: 0;
+    }
+
+    @include mobile-width-only {
+      margin-top: 0;
+
+    }
+  }
+
+  &:nth-child(1):before,
+  &:nth-child(2):before,
+  &:nth-child(3):before,
+  &:nth-child(4):before,
+  &:nth-child(5):before {
+    content: "";
+    width: 179px;
+    margin-right: 35px;
+    background-repeat: no-repeat;
+
+    @include tablet-width-only {
+      margin-bottom: 20px;
+    }
+
+    @include mobile-width-only {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+
+  &:nth-child(1):before {
+    height: 138px;
+    background-image: url("../img/you-will-know-what-to-do/decor-01.png");
+  }
+  &:nth-child(2):before {
+    height: 135px;
+    background-image: url("../img/you-will-know-what-to-do/decor-02.png");
+  }
+  &:nth-child(3):before {
+    height: 135px;
+    background-image: url("../img/you-will-know-what-to-do/decor-03.png");
+  }
+  &:nth-child(4):before {
+    height: 140px;
+    background-image: url("../img/you-will-know-what-to-do/decor-04.png");
+  }
+  &:nth-child(5):before {
+    height: 142px;
+    background-image: url("../img/you-will-know-what-to-do/decor-05.png");
+  }
+
+  &:not(:last-child) {
+    @include mobile-width-only {
+      margin-bottom: 50px;
+    }
+  }
+
+  @include tablet-width-only {
+    width: 43.472%;
+    margin-bottom: 50px;
+  }
+
+  @include mobile-width-only {
+    width: auto;
+    justify-content: center;
+    text-align: center;
+  }
+}
+.you-will-know-what-to-do__item-wrapper {
+  width: 55.86%;
+  padding-top: 10px;
+
+  @include tablet-width-only {
+    width: auto;
+  }
+
+  @include mobile-width-only {
+    width: auto;
+  }
+}
+.you-will-know-what-to-do__item-title {
+  display: block;
+  margin-bottom: 10px;
+  font-family: $core-sans-bold;
+  font-size: 20px;
+  color: #4d4d4d;
+
+  @include tablet-width-only {
+    margin-bottom: 15px;
+  }
+}
+.you-will-know-what-to-do__item-description {
+  color: #4d4d4d;
+}
