@@ -1,0 +1,122 @@
+.you-will-gain-skill {
+  padding-top: 180px;
+  background-image: url("../img/you-will-gain-skill/main-background-desktop.png");
+  background-position: 29px 248px;
+  background-repeat: no-repeat;
+
+  @include tablet-width-only {
+    padding-top: 100px;
+    background-image: url("../img/you-will-gain-skill/main-background-tablet.png");
+    background-position: 0 200px;
+  }
+
+  @include mobile-width-only {
+    padding-top: 60px;
+    background-image: url("../img/you-will-gain-skill/main-background-mobile.png");
+    background-position: 0 180px;
+  }
+}
+.you-will-gain-skill__wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 1170px;
+  min-height: 873px;
+  padding: 0 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include tablet-width-only {
+    max-width: 750px;
+  }
+}
+.you-will-gain-skill__title {
+  margin-bottom: 90px;
+  text-transform: uppercase;
+
+  &:after {
+    content: "Ты приобретёшь";
+
+    @include tablet-width-only {
+      font-size: 120px;
+    }
+
+    @include mobile-width-only {
+      top: -10px;
+      width: 730px;
+    }
+  }
+
+  @include mobile-width-only {
+    margin-bottom: 70px;
+  }
+}
+.you-will-gain-skill__list {
+  width: 40.35%;
+  margin-left: auto;
+
+  @include tablet-width-only {
+    width: 62%;
+  }
+
+  @include mobile-width-only {
+    width: 70%;
+  }
+}
+.you-will-gain-skill__item {
+  margin-bottom: 70px;
+  color: #4d4d4d;
+  line-height: 24px;
+
+  &:nth-child(1) {
+    width: 130px;
+
+    @include mobile-width-only {
+      margin-bottom: 80px;
+    }
+  }
+  &:nth-child(2) {
+    width: 210px;
+    margin-left: 100px;
+
+    @include mobile-width-only {
+      width: 145px;
+      margin-bottom: 70px;
+      margin-left: 30px;
+    }
+  }
+  &:nth-child(3) {
+    width: 185px;
+    margin-bottom: 110px;
+    margin-left: 170px;
+
+    @include mobile-width-only {
+      width: 185px;
+      margin-bottom: 115px;
+      margin-left: 40px;
+    }
+  }
+  &:nth-child(4) {
+    width: 230px;
+    margin-bottom: 90px;
+    margin-left: 220px;
+
+    @include mobile-width-only {
+      width: 185px;
+      margin-bottom: 80px;
+      margin-left: 10px;
+    }
+  }
+  &:nth-child(5) {
+    width: 230px;
+    margin-left: 250px;
+
+    @include tablet-width-only {
+      margin-left: 230px;
+    }
+
+    @include mobile-width-only {
+      width: 230px;
+      margin-left: -50px;
+    }
+  }
+}
