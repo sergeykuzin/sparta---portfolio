@@ -1,0 +1,17 @@
+.photos {
+  padding-top: 100px;
+
+  @include tablet-width-only {
+    position: relative;
+    margin-top: -127px;
+    padding-top: 0;
+    z-index: -1;
+  }
+
+  @include mobile-width-only {
+    position: relative;
+    margin-top: -83px;
+    padding-top: 0;
+    z-index: -10;
+  }
+}
