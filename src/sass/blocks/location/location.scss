@@ -1,0 +1,48 @@
+.location {
+  min-height: 890px;
+  padding-top: 100px;
+  background-image: url("../img/location/map-background-desktop.png");
+  background-repeat: no-repeat;
+  background-position: 50% 230px;
+
+  @include tablet-width-only {
+    min-height: 830px;
+    padding-top: 80px;
+    background-image: url("../img/location/map-background-tablet.png");
+    background-color: #fefdfd;
+    background-position: 50% 180px;
+  }
+
+  @include mobile-width-only {
+    min-height: 630px;
+    background-image: url("../img/location/map-background-mobile.png");
+    background-color: #fefdfd;
+    background-position: 50% 190px;
+  }
+}
+
+.location__wrapper {
+  max-width: 1170px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.location__title {
+  text-transform: uppercase;
+
+  &:after {
+    content: "Мы здесь были";
+
+    @include tablet-width-only {
+      width: 800px;
+      color: #eaebeb;
+    }
+
+    @include mobile-width-only {
+      width: 700px;
+      color: #eaebeb;
+    }
+  }
+}
