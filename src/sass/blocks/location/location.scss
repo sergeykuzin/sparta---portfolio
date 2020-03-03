@@ -4,6 +4,7 @@
   background-image: url("../img/location/map-background-desktop.png");
   background-repeat: no-repeat;
   background-position: 50% 230px;
+  overflow: hidden;
 
   @include tablet-width-only {
     min-height: 830px;

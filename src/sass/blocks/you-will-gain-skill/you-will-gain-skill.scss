@@ -1,6 +1,7 @@
 .you-will-gain-skill {
   position: relative;
   padding-top: 180px;
+  overflow: hidden;
 
   @include tablet-width-only {
     padding-top: 100px;

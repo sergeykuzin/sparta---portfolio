@@ -6,6 +6,7 @@
   background-image: url("../img/course-program/main-background-desktop.png");
   background-repeat: no-repeat;
   background-position: 0 350px;
+  overflow: hidden;
 
   @include tablet-width-only {
     max-width: 750px;

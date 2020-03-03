@@ -3,6 +3,7 @@
   margin-right: auto;
   margin-left: auto;
   padding-top: 50px;
+  overflow: hidden;
 
   @include tablet-width-only {
     padding-bottom: 50px;

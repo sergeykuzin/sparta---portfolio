@@ -3,6 +3,7 @@
   margin-left: auto;
   margin-right: auto;
   padding: 70px 15px 60px 15px;
+  overflow: hidden;
 
   @include tablet-width-only {
     max-width: 750px;

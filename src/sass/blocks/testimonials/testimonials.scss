@@ -4,6 +4,7 @@
   background-image: url("../img/testimonials/main-background-desktop.png");
   background-repeat: no-repeat;
   background-position: 50% -240px;
+  overflow: hidden;
 
   @include tablet-width-only {
     padding-bottom: 0;
