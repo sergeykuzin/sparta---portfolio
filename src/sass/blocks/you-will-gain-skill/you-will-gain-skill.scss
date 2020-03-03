@@ -28,9 +28,15 @@
 
     @include mobile-width-only {
       left: auto;
+      top: 188px;
       transform: none;
       background-image: url("../img/you-will-gain-skill/main-background-mobile.png");
     }
+  }
+}
+@media screen and(min-width: 320px) and(max-width: 363px) {
+  .you-will-gain-skill:after {
+    top: 248px;
   }
 }
 .you-will-gain-skill__wrapper {
@@ -64,6 +70,7 @@
   }
 
   @include mobile-width-only {
+    max-width: 450px;
     margin-bottom: 70px;
   }
 }
@@ -72,13 +79,22 @@
   margin-left: auto;
 
   @include tablet-width-only {
-    width: 62%;
+    min-width: 500px;
+    padding-top: 40px;
   }
 
   @include mobile-width-only {
+    position: relative;
+    padding-top: 70px;
     width: 70%;
+    z-index: 10;
   }
 }
+//@media screen and(min-width: 400px) and(max-width: 500px) {
+  //.you-will-gain-skill__list {
+    //padding-top: 120px;
+  //}
+//}
 .you-will-gain-skill__item {
   margin-bottom: 70px;
   color: #4d4d4d;

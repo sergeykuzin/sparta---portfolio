@@ -30,25 +30,9 @@
     margin-bottom: 40px;
   }
 }
-figure {
+.instructor__wrapper {
   display: flex;
-  max-height: 290px;
-  margin: 0;
   margin-bottom: 80px;
-
-  & img {
-    margin-right: 40px;
-
-    @include tablet-width-only {
-      margin-right: 0;
-      margin-bottom: 20px;
-    }
-    @include mobile-width-only {
-      height: 290px;
-      margin-right: 0;
-      margin-bottom: 20px;
-    }
-  }
 
   @include tablet-width-only {
     max-height: none;
@@ -63,7 +47,25 @@ figure {
     flex-direction: column;
   }
 }
-figcaption {
+.instructor__photo {
+  width: 290px;
+  height: 290px;
+  margin-right: 40px;
+  background-image: url("../img/instructor/photo.png");
+  background-repeat: no-repeat;
+  flex-shrink: 0;
+
+  @include tablet-width-only {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  @include mobile-width-only {
+    height: 290px;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+.instructor__name {
   flex-shrink: 0;
   font-family: $core-sans-bold;
   font-size: 24px;
@@ -80,6 +82,7 @@ figcaption {
 }
 .instructor-statistics-in-text {
   display: flex;
+  max-height: 300px;
   flex-direction: column;
   flex-wrap: wrap;
   margin-left: -158px;
@@ -98,6 +101,7 @@ figcaption {
     background-position: -6px 5px;
   }
   @include mobile-width-only {
+    max-height: none;
     margin-left: 0;
     padding-top: 0;
     padding-left: 50px;

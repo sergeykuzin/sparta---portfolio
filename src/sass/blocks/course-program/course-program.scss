@@ -43,8 +43,12 @@
     margin-bottom: 35px;
   }
 }
+.course-program__list-wrapper { // fix bug IE11
+  display: flex;
+}
 .course-program__list {
   display: flex;
+  width: 100%;
   max-height: 320px;
   padding-left: 190px;
   flex-direction: column;
@@ -55,7 +59,7 @@
 
   @include tablet-width-only {
     width: 100%;
-    max-height: 300px;
+    max-height: 260px;
     margin-bottom: 40px;
     padding: 0;
   }

@@ -145,30 +145,33 @@
     padding-right: 15px;
     padding-left: 15px;
   }
+}
+.testimonials__reviewer-photo {
+  width: 199px;
+  height: 265px;
+  position: absolute;
+  top: 80px;
+  left: 100px;
+  z-index: 20;
+  background-image: url("../img/testimonials/reviewer-photo-desktop.png");
+  background-repeat: no-repeat;
 
-  & img {
-    width: 199px;
-    height: 265px;
-    position: absolute;
-    top: 80px;
-    left: 100px;
-    z-index: 20;
+  @include tablet-width-only {
+    width: 145px;
+    height: 193px;
+    top: 40px;
+    left: 55px;
+    background-image: url("../img/testimonials/reviewer-photo-tablet.png");
+  }
 
-    @include tablet-width-only {
-      width: 145px;
-      height: 193px;
-      top: 40px;
-      left: 55px;
-    }
-
-    @include mobile-width-only {
-      position: relative;
-      width: 117px;
-      height: 156px;
-      top: auto;
-      left: auto;
-      margin-bottom: 20px;
-    }
+  @include mobile-width-only {
+    position: relative;
+    width: 117px;
+    height: 156px;
+    top: auto;
+    left: auto;
+    margin-bottom: 20px;
+    background-image: url("../img/testimonials/reviewer-photo-mobile.png");
   }
 }
 .testimonials__item-reviewer-wrapper {
@@ -190,6 +193,7 @@
 }
 .testimonials__item-reviewer-text {
   position: relative;
+  width: 100%;
   max-height: 170px;
   margin-bottom: 15px;
   line-height: 24px;

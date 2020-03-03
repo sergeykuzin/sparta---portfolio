@@ -119,12 +119,60 @@
     flex-direction: row-reverse;
   }
 }
-.what-awaits-you__image {
+.what-awaits-you__image-special-knowledge,
+.what-awaits-you__image-special-skills,
+.what-awaits-you__image-extreme,
+.what-awaits-you__image-constant-stress {
   margin-right: 30px;
+  background-repeat: no-repeat;
 
   @include mobile-width-only {
     margin-right: 0;
     margin-bottom: 20px;
+  }
+}
+.what-awaits-you__image-special-knowledge {
+  width: 366px;
+  height: 300px;
+  background-image: url("../img/what-awaits-you/special-knowledge.png");
+
+  @include mobile {
+    width: 290px;
+    height: 237px;
+    background-image: url("../img/what-awaits-you/special-knowledge-tablet.png");
+  }
+}
+.what-awaits-you__image-special-skills {
+  width: 373px;
+  height: 312px;
+  background-image: url("../img/what-awaits-you/special-skills.png");
+
+  @include mobile {
+    width: 291px;
+    height: 243px;
+    background-image: url("../img/what-awaits-you/special-skills-tablet.png");
+  }
+}
+.what-awaits-you__image-extreme {
+  width: 374px;
+  height: 385px;
+  background-image: url("../img/what-awaits-you/extreme.png");
+
+  @include mobile {
+    width: 320px;
+    height: 333px;
+    background-image: url("../img/what-awaits-you/extreme-tablet.png");
+  }
+}
+.what-awaits-you__image-constant-stress {
+  width: 393px;
+  height: 321px;
+  background-image: url("../img/what-awaits-you/constant-stress.png");
+
+  @include mobile {
+    width: 343px;
+    height: 280px;
+    background-image: url("../img/what-awaits-you/constant-stress-tablet.png");
   }
 }
 .what-awaits-you__item:not(:first-child) {
@@ -170,7 +218,8 @@
   width: 290px;
 
   @include mobile-width-only {
-    width: auto;
+    // width: auto;
+    width: 275px; // ++
   }
 }
 .what-awaits-you__description--special-skills,
@@ -182,11 +231,17 @@
     margin-right: 40px;
   }
 }
+.what-awaits-you__description--constant-stress {
+  @include tablet-width-only {
+    margin-right: 40px;
+  }
+}
 .what-awaits-you__description--extreme {
   width: 310px;
 
   @include mobile-width-only {
-    width: auto;
+    // width: auto;
+    width: 275px; // +++
   }
 }
 

@@ -56,9 +56,10 @@
 }
 .what-gives-our-course__title {
   display: flex;
+  min-width: 422px;
+  min-height: 339px;
   justify-content: center;
   align-items: center;
-  min-width: 422px;
   font-family: $core-sans-black;
   font-size: 36px;
   line-height: 44px;
@@ -68,8 +69,9 @@
   background-repeat: no-repeat;
 
   @include tablet-width-only {
-    padding-left: 30px;
     min-width: 269px;
+    min-height: 366px;
+    padding-left: 30px;
     background-image: url("../img/what-gives-our-course/what-gives-our-course-background-tablet.png");
   }
 
@@ -88,6 +90,7 @@
   padding-left: 55px;
 
   @include tablet-width-only {
+    width: 100%;
     padding-top: 40px;
     padding-right: 20px;
     padding-left: 35px;
@@ -241,6 +244,10 @@
 
   @include tablet-width-only {
     max-width: 300px;
+  }
+
+  @include mobile-width-only {
+    width: 100%;
   }
 }
 .what-will-not-be__item:first-child {

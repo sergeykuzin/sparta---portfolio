@@ -11,11 +11,9 @@
     background-image: url("../img/test-yourself/main-background-mobile.png");
   }
 }
-.test-yourself__wrapper {
+.test-yourself__inner { // fix bug in IE
   display: flex;
-  align-items: center;
   max-width: 1170px;
-  min-height: 369px;
   margin-right: auto;
   margin-left: auto;
   padding-right: 15px;
@@ -27,7 +25,17 @@
 
   @include mobile-width-only {
     max-width: 320px;
-    min-height: 510px;
+    height: 510px;
+  }
+}
+.test-yourself__wrapper {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  min-height: 369px;
+
+
+  @include mobile-width-only {
     flex-direction: column;
     justify-content: center;
   }

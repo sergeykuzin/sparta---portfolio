@@ -53,6 +53,9 @@ function buildCss() {
     .pipe(sass())
     .pipe(autoprefixer({
       cascade: false,
+      overrideBrowserslist: [
+        'IE 10',
+      ],
     }))
     .pipe(csso({ restructure: true }))
     .pipe(gulp.dest('./dist/css'))

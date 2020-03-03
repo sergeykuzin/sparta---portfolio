@@ -14,8 +14,8 @@
       <div class="page-header">
         <div class="page-header__top"><a class="logo" href="#"></a><strong class="page-header__subtitle">Спецкурс</strong><a class="telephone" href="tel:+79304150252">+7 (930) 410 02 52</a></div>
         <div class="page-header__bottom">
-          <h1 class="page-header__title"><span>Выжить<br></span><span>Любой ценой<br></span></h1>
-          <div class="timetable"><img src="img/page-header/timetable.png" alt="timetable"><span>3 дня с утра<br>до вечера</span></div>
+          <h1 class="page-header__title"><span>Выжить<br/></span><span>Любой ценой<br/></span></h1>
+          <div class="timetable"><img src="img/page-header/timetable.png" alt="timetable"><span>3 дня с утра<br/>до вечера</span></div>
           <button class="main-button" type="button">Рискнуть</button>
         </div>
       </div>
@@ -25,9 +25,7 @@
         <h2 class="section-title what-awaits-you-title">Что вас ждёт</h2>
         <ul class="what-awaits-you__list">
           <li class="what-awaits-you__item">
-            <picture class="what-awaits-you__image">
-              <source srcset="img/what-awaits-you/special-knowledge.png" media="(min-width: 1170px)"><img src="img/what-awaits-you/special-knowledge-tablet.png" alt="">
-            </picture>
+            <div class="what-awaits-you__image-special-knowledge"></div>
             <div class="what-awaits-you__description what-awaits-you__description--special-knowledge"><strong class="what-awaits-you__title">Спецзнания</strong>
               <p class="what-awaits-you__text">
                 За 3 дня спецкурса вы получите знания,
@@ -37,9 +35,7 @@
             </div>
           </li>
           <li class="what-awaits-you__item what-awaita-you__item--special-skills">
-            <picture class="what-awaits-you__image">
-              <source srcset="img/what-awaits-you/special-skills.png" media="(min-width: 1170px)"><img src="img/what-awaits-you/special-skills-tablet.png" alt="">
-            </picture>
+            <div class="what-awaits-you__image-special-skills"></div>
             <div class="what-awaits-you__description what-awaits-you__description--special-skills"><strong class="what-awaits-you__title">Спецнавыки</strong>
               <p class="what-awaits-you__text">
                 3 дня в лесу, без палаток, зажигалок
@@ -49,9 +45,7 @@
             </div>
           </li>
           <li class="what-awaits-you__item">
-            <picture class="what-awaits-you__image">
-              <source srcset="img/what-awaits-you/extreme.png" media="(min-width: 1170px)"><img src="img/what-awaits-you/extreme-tablet.png" alt="">
-            </picture>
+            <div class="what-awaits-you__image-extreme"></div>
             <div class="what-awaits-you__description what-awaits-you__description--extreme"><strong class="what-awaits-you__title">Экстрим</strong>
               <p class="what-awaits-you__text">
                 Смоделированные экстремальные ситуации, максимально
@@ -62,9 +56,7 @@
             </div>
           </li>
           <li class="what-awaits-you__item what-awaits-you__item--constant-stress">
-            <picture class="what-awaits-you__image">
-              <source srcset="img/what-awaits-you/constant-stress.png" media="(min-width: 1170px)"><img src="img/what-awaits-you/constant-stress-tablet.png" alt="">
-            </picture>
+            <div class="what-awaits-you__image-constant-stress"></div>
             <div class="what-awaits-you__description what-awaits-you__description--constant-stress"><strong class="what-awaits-you__title">Постоянный стресс</strong>
               <p class="what-awaits-you__text">
                 Участникам предстоит преодолевая себя действовать
@@ -77,7 +69,7 @@
       </section>
       <section class="what-gives-our-course">
         <div class="what-gives-our-course-wrapper">
-          <h2 class="what-gives-our-course__title">Что даёт наш</br>спецкурс</h2>
+          <h2 class="what-gives-our-course__title">Что даёт наш<br/>спецкурс</h2>
           <ul class="what-gives-our-course__list">
             <li class="what-gives-our-course__item"><strong class="what-gives-our-course__item-title">Базовые знания</strong>
               <p class="what-gives-our-course__item-description">
@@ -95,7 +87,7 @@
           </ul>
         </div>
         <div class="what-will-not-be">
-          <h3 class="what-will-not-be__title">Чего</br>не будет</h3>
+          <h3 class="what-will-not-be__title">Чего<br/>не будет</h3>
           <ul class="what-will-not-be__list">
             <li class="what-will-not-be__item"><strong class="what-will-not-be__item-title">Нет скуке!</strong>
               <p class="what-will-not-be__item-description">
@@ -149,7 +141,7 @@
         </ul>
       </section>
       <section class="safety-in-city">
-        <h2 class="safety-in-city__title">Также курс включает в себя блок</br>по безопасности в городе</h2>
+        <h2 class="safety-in-city__title">Также курс включает в себя блок<br/>по безопасности в городе</h2>
         <ul class="safety-in-city__list">
           <li class="safety-in-city__item">Как действовать во время пожара?</li>
           <li class="safety-in-city__item">Блок по автомобильной безопасности.</li>
@@ -159,11 +151,13 @@
         </ul>
       </section>
       <section class="test-yourself">
-        <div class="test-yourself__wrapper">
-          <div class="test-yourself__text-wrapper">
-            <h2 class="test-yourself__title">Испытай</h2><span>себя </br>на прочность</span>
+        <div class="test-yourself__inner">
+          <div class="test-yourself__wrapper">
+            <div class="test-yourself__text-wrapper">
+              <h2 class="test-yourself__title">Испытай</h2><span>себя <br/>на прочность</span>
+            </div>
+            <button class="main-button" type="button">Рискнуть</button>
           </div>
-          <button class="main-button" type="button">Рискнуть</button>
         </div>
       </section>
       <section class="you-will-gain-skill">
@@ -183,31 +177,28 @@
       </section>
       <section class="course-program">
         <h2 class="section-title course-program__title">В программе спецкурса</h2>
-        <ul class="course-program__list">
-          <li class="course-program__item">Военный альпинизм с минимальным набором снаряжения</li>
-          <li class="course-program__item">Тактическая медицина</li>
-          <li class="course-program__item">Разведение огня без спичек</li>
-          <li class="course-program__item">Построение укрытий, долговременных и краткосрочных</li>
-          <li class="course-program__item">Блок по экипировке</li>
-          <li class="course-program__item">Аварийно-спасательные работы</li>
-          <li class="course-program__item">Первая помощь</li>
-          <li class="course-program__item">Методы согрева и просушки одежды</li>
-          <li class="course-program__item">Поисково-спасательные работы</li>
-        </ul>
+        <div class="course-program__list-wrapper">
+          <ul class="course-program__list">
+            <li class="course-program__item">Военный альпинизм с минимальным набором снаряжения</li>
+            <li class="course-program__item">Тактическая медицина</li>
+            <li class="course-program__item">Разведение огня без спичек</li>
+            <li class="course-program__item">Построение укрытий, долговременных и краткосрочных</li>
+            <li class="course-program__item">Блок по экипировке</li>
+            <li class="course-program__item">Аварийно-спасательные работы</li>
+            <li class="course-program__item">Первая помощь</li>
+            <li class="course-program__item">Методы согрева и просушки одежды</li>
+            <li class="course-program__item">Поисково-спасательные работы</li>
+          </ul>
+        </div>
         <div class="course-program__sign-up"><span class="course-program__sign-up-text">Записаться и</span>
           <button class="main-button" type="button">Рискнуть</button>
         </div>
       </section>
-      <section class="photos">
-        <picture>
-          <source srcset="img/photos/photo-desktop.png" media="(min-width: 1170px)">
-          <source srcset="img/photos/photo-tablet.png" media="(min-width: 765px)"><img src="img/photos/photo-mobile.png" alt="">
-        </picture>
-      </section>
+      <section class="photos"></section>
       <section class="instructor">
         <h2 class="section-title instructor__title">Инструктор</h2>
-        <figure><img src="img/instructor/photo.png" width="290" height="290" alt="">
-          <figcaption>Роман Попков</figcaption>
+        <div class="instructor__wrapper">
+          <div class="instructor__photo"></div><strong class="instructor__name">Роман Попков</strong>
           <ul class="instructor-statistics-in-text">
             <li class="instructor-statistics-in-text__item">Альпинист</li>
             <li class="instructor-statistics-in-text__item">
@@ -221,7 +212,7 @@
             <li class="instructor-statistics-in-text__item">Обучение и  подготовка в Центре медицины катастроф</li>
             <li class="instructor-statistics-in-text__item">Дайвер</li>
           </ul>
-        </figure>
+        </div>
         <ul class="instructor-statistics-in-numbers">
           <li class="instructor-statistics-in-numbers__item">Спарт провел в качестве капитана</li>
           <li class="instructor-statistics-in-numbers__item">прыжков с веревкой (Rope Jumping)</li>
@@ -230,11 +221,13 @@
         </ul>
       </section>
       <section class="test-yourself">
-        <div class="test-yourself__wrapper">
-          <div class="test-yourself__text-wrapper">
-            <h2 class="test-yourself__title">Испытай</h2><span>себя </br>на прочность</span>
+        <div class="test-yourself__inner">
+          <div class="test-yourself__wrapper">
+            <div class="test-yourself__text-wrapper">
+              <h2 class="test-yourself__title">Испытай</h2><span>себя <br/>на прочность</span>
+            </div>
+            <button class="main-button" type="button">Рискнуть</button>
           </div>
-          <button class="main-button" type="button">Рискнуть</button>
         </div>
       </section>
       <section class="testimonials">
@@ -243,10 +236,7 @@
           <div class="video-player"></div>
           <ul class="testimonials__list">
             <li class="testimonials__item">
-              <picture>
-                <source srcset="img/testimonials/reviewer-photo-desktop.png" media="(min-width: 1170px)">
-                <source srcset="img/testimonials/reviewer-photo-tablet.png" media="(min-width: 750px)"><img src="img/testimonials/reviewer-photo-mobile.png" alt="">
-              </picture><span class="testimonials__item-reviewer-name">Дмитрий Весна</span>
+              <div class="testimonials__reviewer-photo"></div><span class="testimonials__item-reviewer-name">Дмитрий Весна</span>
               <p class="testimonials__item-reviewer-text">
                 Я, Выжил!!!! Такого треша в жизни у меня не было. Не думал даже, что
                 на такое способен в последнее время. Ни какое КМБ и прочее с этим не сравнится.

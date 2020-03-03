@@ -1,18 +1,17 @@
 .photos {
-  padding-top: 100px;
-  text-align: center;
+  width: 100%;
+  min-height: 574px;
+  background-image: url("../img/photos/photo-desktop.png");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
 
   @include tablet-width-only {
-    position: relative;
-    margin-top: -127px;
-    padding-top: 0;
-    z-index: -1;
+    min-height: 473px;
+    background-image: url("../img/photos/photo-tablet.png");
   }
 
   @include mobile-width-only {
-    position: relative;
-    margin-top: -83px;
-    padding-top: 0;
-    z-index: -10;
+    min-height: 284px;
+    background-image: url("../img/photos/photo-mobile.png");
   }
 }
