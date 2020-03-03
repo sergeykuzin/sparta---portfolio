@@ -1,6 +1,7 @@
 .test-yourself {
   background-image: url("../img/test-yourself/main-background-desktop.png");
   background-repeat: no-repeat;
+  background-position: 50% 0;
 
   @include tablet-width-only {
     background-image: url("../img/test-yourself/main-background-tablet.png");

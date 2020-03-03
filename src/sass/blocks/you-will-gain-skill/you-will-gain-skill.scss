@@ -1,19 +1,36 @@
 .you-will-gain-skill {
+  position: relative;
   padding-top: 180px;
-  background-image: url("../img/you-will-gain-skill/main-background-desktop.png");
-  background-position: 29px 248px;
-  background-repeat: no-repeat;
 
   @include tablet-width-only {
     padding-top: 100px;
-    background-image: url("../img/you-will-gain-skill/main-background-tablet.png");
-    background-position: 0 200px;
   }
 
   @include mobile-width-only {
     padding-top: 60px;
-    background-image: url("../img/you-will-gain-skill/main-background-mobile.png");
-    background-position: 0 180px;
+  }
+
+  &:after {
+    height: 873px;
+    width: 1207px;
+    content: "";
+    position: absolute;
+    top: 248px;
+    left: 30%;
+    transform: translateX(-50%);
+    background-image: url(../img/you-will-gain-skill/main-background-desktop.png);
+    background-repeat: no-repeat;
+
+    @include tablet-width-only {
+      left: 71%;
+      background-image: url("../img/you-will-gain-skill/main-background-tablet.png");
+    }
+
+    @include mobile-width-only {
+      left: auto;
+      transform: none;
+      background-image: url("../img/you-will-gain-skill/main-background-mobile.png");
+    }
   }
 }
 .you-will-gain-skill__wrapper {

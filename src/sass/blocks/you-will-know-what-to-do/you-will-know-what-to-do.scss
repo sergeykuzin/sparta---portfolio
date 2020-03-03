@@ -97,6 +97,13 @@
     }
   }
 
+  &:last-child {
+    @include tablet-width-only {
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
   @include tablet-width-only {
     width: 43.472%;
     margin-bottom: 50px;

@@ -5,6 +5,7 @@
   padding-top: 195px;
   background-image: url("../img/what-gives-our-course/main-background-desktop.png");
   background-repeat: no-repeat;
+  background-position: 50% 0;
 
   @include tablet-width-only {
     min-height: 985px;
@@ -223,7 +224,7 @@
   }
 }
 .what-will-not-be__title {
-  margin-right: 105px;
+  margin-right: auto;
   font-family: $core-sans-black;
   font-size: 36px;
   line-height: 44px;

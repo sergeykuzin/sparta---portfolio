@@ -1,5 +1,6 @@
 .photos {
   padding-top: 100px;
+  text-align: center;
 
   @include tablet-width-only {
     position: relative;
