@@ -16,6 +16,22 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+.container {
+  max-width: 1170px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include tablet-width-only {
+    max-width: 750px;
+  }
+
+  @include mobile-width-only {
+    max-width: 320px;
+  }
+}
+
 ul {
   margin: 0;
   padding: 0;

@@ -13,18 +13,8 @@
 }
 .test-yourself__inner { // fix bug in IE
   display: flex;
-  max-width: 1170px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 15px;
-  padding-left: 15px;
-
-  @include tablet-width-only {
-    max-width: 750px;
-  }
 
   @include mobile-width-only {
-    max-width: 320px;
     height: 510px;
   }
 }

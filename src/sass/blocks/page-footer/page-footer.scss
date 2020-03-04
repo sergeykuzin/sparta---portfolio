@@ -1,15 +1,11 @@
 .page-footer {
   display: flex;
   justify-content: space-between;
-  max-width: 1170px;
-  margin-right: auto;
-  margin-left: auto;
   padding: 30px 15px 55px 210px;
   color: #3c313b;
 
   @include tablet-width-only {
     align-items: center;
-    max-width: 750px;
     padding-left: 15px;
   }
 

@@ -19,19 +19,6 @@
     background-color: #fcfcfc;
   }
 }
-.testimonials__wrapper {
-  max-width: 1170px;
-  margin-right: auto;
-  margin-left: auto;
-
-  @include tablet-width-only {
-    max-width: 750px;
-  }
-
-  @include mobile-width-only {
-    max-width: 320px;
-  }
-}
 .testimonials__title {
   margin-bottom: 120px;
   text-transform: uppercase;

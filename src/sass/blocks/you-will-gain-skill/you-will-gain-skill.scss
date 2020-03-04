@@ -2,59 +2,43 @@
   position: relative;
   padding-top: 180px;
   overflow: hidden;
+  background-image: url("../img/you-will-gain-skill/man-with-map-desktop.png");
+  background-repeat: no-repeat;
+  background-position: -350px 260px;
 
   @include tablet-width-only {
     padding-top: 100px;
+    background-image: url("../img/you-will-gain-skill/man-with-map-tablet.png");
+    background-position: 0px 370px;
   }
 
   @include mobile-width-only {
     padding-top: 60px;
-  }
-
-  &:after {
-    height: 873px;
-    width: 1207px;
-    content: "";
-    position: absolute;
-    top: 248px;
-    left: 30%;
-    transform: translateX(-50%);
-    background-image: url(../img/you-will-gain-skill/main-background-desktop.png);
-    background-repeat: no-repeat;
-
-    @include tablet-width-only {
-      left: 71%;
-      background-image: url("../img/you-will-gain-skill/main-background-tablet.png");
-    }
-
-    @include mobile-width-only {
-      left: auto;
-      top: 188px;
-      transform: none;
-      background-image: url("../img/you-will-gain-skill/main-background-mobile.png");
-    }
+    background-image: url("../img/you-will-gain-skill/list-background-mobile.png");
+    background-position: 0px 180px;
   }
 }
-@media screen and(min-width: 320px) and(max-width: 363px) {
-  .you-will-gain-skill:after {
-    top: 248px;
+@media screen and(min-width: 470px) and(max-width: 750px) {
+  .you-will-gain-skill {
+    background-position: 30% 180px;
+  }
+}
+@media screen and(min-width: 900px) and(max-width: 1169px) {
+  .you-will-gain-skill {
+    background-position: 15% 370px;
+  }
+}
+@media screen and(min-width: 1450px) {
+  .you-will-gain-skill {
+    background-position: -220px 260px;
   }
 }
 .you-will-gain-skill__wrapper {
   display: flex;
   flex-direction: column;
-  max-width: 1170px;
   min-height: 873px;
-  padding: 0 15px;
-  margin-right: auto;
-  margin-left: auto;
-
-  @include tablet-width-only {
-    max-width: 750px;
-  }
 }
 .you-will-gain-skill__title {
-  margin-bottom: 90px;
   text-transform: uppercase;
 
   &:after {
@@ -76,26 +60,28 @@
   }
 }
 .you-will-gain-skill__list {
-  width: 40.35%;
-  margin-left: auto;
+  padding-top: 100px;
+  padding-left: 640px;
+  background-image: url("../img/you-will-gain-skill/list-background-desktop.png");
+  background-repeat: no-repeat;
+  background-position: 370px 40px;
 
   @include tablet-width-only {
     min-width: 500px;
-    padding-top: 40px;
+    padding-top: 80px;
+    padding-left: 280px;
+    background-image: url("../img/you-will-gain-skill/list-background-tablet.png");
+    background-position: 20px 20px;
   }
 
   @include mobile-width-only {
     position: relative;
-    padding-top: 70px;
     width: 70%;
+    padding-left: 90px;
+    padding-top: 0px;
     z-index: 10;
   }
 }
-//@media screen and(min-width: 400px) and(max-width: 500px) {
-  //.you-will-gain-skill__list {
-    //padding-top: 120px;
-  //}
-//}
 .you-will-gain-skill__item {
   margin-bottom: 70px;
   color: #4d4d4d;

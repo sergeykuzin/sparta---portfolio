@@ -1,21 +1,17 @@
 .course-program {
-  max-width: 1170px;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 150px 15px 104px 15px;
+  padding-top: 150px;
+  padding-bottom: 104px;
   background-image: url("../img/course-program/main-background-desktop.png");
   background-repeat: no-repeat;
   background-position: 0 350px;
   overflow: hidden;
 
   @include tablet-width-only {
-    max-width: 750px;
     background-image: url("../img/course-program/main-background-tablet.png");
     background-position: 0 280px;
   }
 
   @include mobile-width-only {
-    max-width: 320px;
     min-height: 939px;
     padding-top: 30px;
     padding-bottom: 85px;

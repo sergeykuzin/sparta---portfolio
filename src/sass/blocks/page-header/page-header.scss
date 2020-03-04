@@ -1,4 +1,4 @@
-.page-header-wrapper {
+.page-header {
   min-height: 1006px;
   background-image: url("../img/page-header/main-background-desktop.jpg");
   background-repeat: no-repeat;
@@ -16,19 +16,18 @@
     background-position: 50% 0;
   }
 }
-.page-header {
-  max-width: 1170px;
-  margin: 0 auto;
-  padding: 20px 15px 0 15px;
+.container.page-header__inner {
+  padding-top: 20px;
+  padding-bottom: 15px;
 
   @include tablet-width-only {
-    max-width: 765px;
-    padding: 10px 20px 0 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
   }
 
   @include mobile-width-only {
-    max-width: 320px;
-    padding: 10px 10px 0 10px;
+    padding-top: 10px;
+    padding-bottom: 0;
   }
 }
 .page-header__top {
@@ -102,7 +101,7 @@
 
   @include mobile-width-only {
     order: 3;
-    margin-top: 40px;
+    margin-top: 45px;
     font-size: 16px;
   }
 }
@@ -130,7 +129,16 @@
 .page-header__title {
   margin-bottom: 40px;
 
+  @include tablet-width-only {
+    margin-bottom: 25px;
+  }
+
+  @include mobile-width-only {
+    margin-bottom: 32px;
+  }
+
   & span:first-child {
+    display: block;
     font-family: $besom;
     font-size: 180px;
     line-height: 180px;
@@ -140,9 +148,11 @@
     @include tablet-width-only {
       font-size: 107px;
       line-height: 107px;
+      letter-spacing: 6px;
     }
 
     @include mobile-width-only {
+      margin-bottom: 6px;
       font-size: 102px;
       line-height: 102px;
       letter-spacing: 4px;
@@ -152,23 +162,24 @@
   & span:last-child {
     font-family: $core-sans-black;
     font-size: 68px;
+    line-height: 68px;
     text-transform: uppercase;
     letter-spacing: 5px;
     color: #fff;
 
     @include tablet-width-only {
       font-size: 40px;
+      line-height: 40px;
+      letter-spacing: 0;
     }
 
     @include mobile-width-only {
       font-size: 38px;
-      letter-spacing: 2px;
+      line-height: 38px;
+      letter-spacing: 1px;
     }
   }
 
-  @include tablet-width-only {
-    margin-bottom: 25px;
-  }
 }
 .timetable {
   display: flex;
@@ -179,7 +190,7 @@
     margin-right: 30px;
 
     @include mobile-width-only {
-      margin-right: 12px;
+      margin-right: 9px;
     }
   }
 
@@ -191,6 +202,11 @@
 
   @include tablet-width-only {
     display: flex;
+    margin-bottom: 50px;
     justify-content: center;
+  }
+
+  @include mobile-width-only {
+    margin-bottom: 50px;
   }
 }

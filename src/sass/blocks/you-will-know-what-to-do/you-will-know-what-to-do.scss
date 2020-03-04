@@ -1,15 +1,7 @@
 .you-will-know-what-to-do {
-  max-width: 1170px;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 100px 15px 125px 15px;
+  padding-top: 100px;
+  padding-bottom: 125px;
   overflow: hidden;
-
-  @include tablet-width-only {
-    max-width: 750px;
-    padding-right: 15px;
-    padding-left: 15px;
-  }
 }
 .you-will-know-what-to-do__title {
   margin-bottom: 80px;
