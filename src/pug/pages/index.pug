@@ -3,10 +3,13 @@ extends ../blocks/layout/layout.pug
 block title
   title Закрытый спецкурс. Выжить любой ценой.
 
-block stylesheet
+block stylesheetAndScripts
   link(
     rel="stylesheet"
     href="css/index.css"
+  )
+  script(
+    src="https://www.youtube.com/iframe_api"
   )
 
 block content

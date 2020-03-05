@@ -8,6 +8,7 @@
     <meta name="description" content="Description of the site">
     <link rel="stylesheet" href="css/core.css">
     <link rel="stylesheet" href="css/index.css">
+    <script src="https://www.youtube.com/iframe_api"></script>
   </head>
   <body>
     <header class="page-header">
@@ -231,10 +232,12 @@
         </div>
       </section>
       <section class="testimonials">
-        <!-- .testimonials__wrapper-->
         <div class="container">
           <h2 class="testimonials__title">Отзывы</h2>
-          <div class="video-player"></div>
+          <div class="video-player-wrapper">
+            <button class="video-player__play-button" type="button"></button>
+            <div class="player" style="display: none;" id="player"></div>
+          </div>
           <ul class="testimonials__list">
             <li class="testimonials__item">
               <div class="testimonials__reviewer-photo"></div><span class="testimonials__item-reviewer-name">Дмитрий Весна</span>
