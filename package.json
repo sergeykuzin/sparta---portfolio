@@ -1,25 +1,26 @@
 {
-  "name": "gulp-webpack-config",
+  "name": "Закрытый спецкурс. Выжить любой ценой",
   "version": "1.0.0",
-  "main": "index.js",
-  "author": "sergeykuzin <sergeykuzin2008@ya.ru>",
-  "license": "MIT",
+  "description": "",
+  "main": "",
   "scripts": {
-    "webpack-dev": "webpack --config webpack.config.dev.js",
-    "webpack-build": "webpack --config webpack.config.prod.js",
-    "webpack-watch": "webpack --config webpack.config.dev.js --watch",
-    "build": "gulp build && yarn webpack-build",
-    "commit": "npx git-cz",
-    "dev-watch": "concurrently \"gulp serve\" \"yarn webpack-watch\"",
-    "serve": "gulp dev && yarn webpack-dev && yarn dev-watch"
+    "commit": "npx git-cz"
   },
+  "author": "",
+  "license": "ISC",
+  "browserslist": [
+    "> 1%",
+    "not dead"
+  ],
   "devDependencies": {
-    "@babel/core": "^7.8.4",
-    "@babel/preset-env": "^7.8.4",
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
     "babel-loader": "^8.0.6",
     "browser-sync": "^2.26.7",
-    "concurrently": "^5.1.0",
-    "cz-conventional-changelog": "3.1.0",
+    "core-js": "^3.4.2",
+    "cz-conventional-changelog": "^3.1.0",
     "del": "^5.1.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.0.0",
@@ -28,18 +29,11 @@
     "gulp-autoprefixer": "^7.0.1",
     "gulp-csso": "^4.0.1",
     "gulp-pug": "^4.0.1",
-    "gulp-rev": "^9.0.0",
-    "gulp-rev-collector": "^1.3.1",
-    "gulp-rev-delete-original": "^0.2.3",
     "gulp-sass": "^4.0.2",
-    "gulp-svg-sprite": "^1.5.0",
-    "gulp-webp": "^4.0.1",
-    "gulp.spritesmith": "^6.11.0",
-    "html-webpack-plugin": "^3.2.0",
-    "webpack": "^4.41.6",
-    "webpack-cli": "^3.3.11"
+    "prettier": "1.19.1",
+    "webpack": "^4.41.2",
+    "webpack-stream": "^5.2.1"
   },
-  "dependencies": {},
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
