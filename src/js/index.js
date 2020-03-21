@@ -5,8 +5,6 @@ const onLoadWindow = () => {
   const playButton = document.querySelector('.video-player__play-button');
   let player = null;
 
-  // window.console.log('YT - ', YT);
-
   player = new YT.Player('player', {
     videoId: 'NR2pM95f8Rw',
   });
@@ -45,19 +43,19 @@ const slides = document.querySelectorAll('.testimonials__item');
 const slidesWrapper = document.querySelector('.testimonials__list');
 const dots = document.querySelectorAll('.testimonials__pagination-dot');
 
+
 const moveSlides = () => {
-  const slideWidht = 1140;
+  const slideWidth = slidesWrapper.offsetWidth;
   slides.forEach((slide, index) => {
     if (slide.dataset.slideActive === 'true') {
       const activeSlideIndex = index;
-      const slideMove = slideWidht * activeSlideIndex;
+      const slideMove = slideWidth * activeSlideIndex;
       slidesWrapper.style.transform = `translateX(-${slideMove}px)`;
     }
   });
 };
 
 const moveDots = () => {
-  console.log('moveDots() - start');
   let activeSlideIndex = null;
 
   slides.forEach((slide, index) => {
