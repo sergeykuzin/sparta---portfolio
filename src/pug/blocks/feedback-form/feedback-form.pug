@@ -1,0 +1,11 @@
+.feedback-form
+  .feedback-form__inner
+    span.feedback-form__title Попробуй выжить 
+    span.feedback-form__message 
+      | Оставь свой номер телефона, наши менеджеры свяжутся
+      | с тобой для подтверждения заявки
+    form(action="#")
+      input(type="text", placeholder="Имя", name="name")
+      input(type="text", placeholder="Телефон", name="phone")
+      button(type="submit").main-button Отправить
+    button(type="button").feedback-form__close-button Закрыть форму обратной связи
