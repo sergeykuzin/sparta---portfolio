@@ -122,6 +122,12 @@
 }
 
 .page-header__bottom {
+  @include mobile-width-only {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   @include tablet-width-only {
     text-align: center;
   }
