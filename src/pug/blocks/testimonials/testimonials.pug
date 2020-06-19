@@ -5,11 +5,9 @@ section.testimonials
       button(type="button").video-player__play-button
       div(style="display: none;")#player.player
     .slider-wrapper
-      ul.testimonials__list
-        li(
-          data-slide-active="true"
-          ).testimonials__item
-          .testimonials__reviewer-photo
+      ul.testimonials__list.swiper-wrapper
+        li.testimonials__item.swiper-slide
+          .testimonials__reviewer-photo.testimonials__reviewer-photo-001
           span.testimonials__item-reviewer-name Дмитрий Весна
           p.testimonials__item-reviewer-text
             | Я, Выжил!!!! Такого треша в жизни у меня не было. Не думал даже, что
@@ -35,34 +33,35 @@ section.testimonials
             | А самое главное найти в себе силы идти к цели, когда нет сил, хочется все
             | послать, сдаться. Открыть в себе не только второе дыхание, а пятое или десятое уже.
           span.testimonials__toggle-text Читать весь отзыв
-        li.testimonials__item
-          .testimonials__reviewer-photo
-          span.testimonials__item-reviewer-name Дмитрий Весна 2222
+        li.testimonials__item.swiper-slide
+          .testimonials__reviewer-photo.testimonials__reviewer-photo-002
+          span.testimonials__item-reviewer-name Виталий Иванов 
           p.testimonials__item-reviewer-text
-            | А самое главное найти в себе силы идти к цели, когда нет сил, хочется все
-            | послать, сдаться. Открыть в себе не только второе дыхание, а пятое или десятое уже.
+            | Господа, огромная просьба к потенциальным участникам будущего похода: не нужно брать
+            | с собой ничего кроме спальника и коврика. А если ваш уровень минимального комфорта ниже
+            | плинтуса, то можете и это не брать. Если есть желание можно взять веревочки, гвоздики,
+            | булавочки и прочее прочее что может пригодиться. Но не обременяйте себя лишним шмотьем. Пожалуйста)
           span.testimonials__toggle-text Читать весь отзыв
-        li.testimonials__item
-          .testimonials__reviewer-photo
-          span.testimonials__item-reviewer-name Дмитрий Весна 3333
+        li.testimonials__item.swiper-slide
+          .testimonials__reviewer-photo.testimonials__reviewer-photo-003
+          span.testimonials__item-reviewer-name Ольга Волкова 
           p.testimonials__item-reviewer-text
-            | А самое главное найти в себе силы идти к цели, когда нет сил, хочется все
-            | послать, сдаться. Открыть в себе не только второе дыхание, а пятое или десятое уже.
+            | Нормальный поход по дикой местности с элементами выживания: разведение костров разными способами,
+            | постройка укрытий, организация ловушек и силков, рыбная ловля на самодельную снасть, поедание
+            | подножного корма… и так далее. В общем, все то, чем деревенские парни развлекаются в детстве.
+            | У нас еще добавился скрытый проход мимо часовых и уход от Урала с автоматчиками, но это уже исключение из правил… =)
           span.testimonials__toggle-text Читать весь отзыв
-        li.testimonials__item
-          .testimonials__reviewer-photo
-          span.testimonials__item-reviewer-name Дмитрий Весна 44444
+        li.testimonials__item.swiper-slide
+          .testimonials__reviewer-photo.testimonials__reviewer-photo-004
+          span.testimonials__item-reviewer-name Оксана Васильева 
           p.testimonials__item-reviewer-text
-            | А самое главное найти в себе силы идти к цели, когда нет сил, хочется все
-            | послать, сдаться. Открыть в себе не только второе дыхание, а пятое или десятое уже.
+            | Сходила. С первых моментов насторожило полное отсутствие запланированного маршрута. Идем туда незнамо
+            | куда. Как выяснилось позже идем впревые по этому направлению. Пройдя часок/ полтора встали выживать.
+            | Выживали преимущественно из ума. На удивление подобралась хорошая группа да и с погодой повезло, самое то
+            | для выживания. Место для (выживания из ума) подобрали на мой взгляд не ахти. Охотиться не на кого, с
+            | собирательством тоже не айс. К сожалению ничего нового кроме рецепта каши из бересты для себя не вынесла.
           span.testimonials__toggle-text Читать весь отзыв
       .testimonials__pagination
-        button(type="button").testimonials__pagination-left
-        ul.testimonials__pagination-dots
-          li(
-            data-dot-active="true"
-            ).testimonials__pagination-dot.testimonials__pagination-dot--active
-          li.testimonials__pagination-dot
-          li.testimonials__pagination-dot
-          li.testimonials__pagination-dot
+        button(type="button" vpoXod.ru).testimonials__pagination-left
+        ul.testimonials__pagination-dots.swiper-pagination
         button(type="button").testimonials__pagination-right

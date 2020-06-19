@@ -161,6 +161,7 @@
   flex-direction: column;
   align-items: flex-start;
   padding: 80px 100px 50px 360px;
+  box-sizing: border-box;
 
   @include tablet-width-only {
     padding-top: 40px;
@@ -183,7 +184,6 @@
   top: 80px;
   left: 100px;
   z-index: 20;
-  background-image: url("../img/testimonials/reviewer-photo-desktop.png");
   background-repeat: no-repeat;
 
   @include tablet-width-only {
@@ -191,7 +191,6 @@
     height: 193px;
     top: 40px;
     left: 55px;
-    background-image: url("../img/testimonials/reviewer-photo-tablet.png");
   }
 
   @include mobile-width-only {
@@ -201,7 +200,50 @@
     top: auto;
     left: auto;
     margin-bottom: 20px;
-    background-image: url("../img/testimonials/reviewer-photo-mobile.png");
+  }
+}
+.testimonials__reviewer-photo-001 {
+  background-image: url("../img/testimonials/reviewer-photo-001-desktop.png");
+
+  @include tablet-width-only {
+    background-image: url("../img/testimonials/reviewer-photo-001-tablet.png");
+  }
+
+  @include mobile-width-only {
+    background-image: url("../img/testimonials/reviewer-photo-001-mobile.png");
+  }
+}
+.testimonials__reviewer-photo-002 {
+  background-image: url("../img/testimonials/reviewer-photo-002-desktop.png");
+
+  @include tablet-width-only {
+    background-image: url("../img/testimonials/reviewer-photo-002-tablet.png");
+  }
+
+  @include mobile-width-only {
+    background-image: url("../img/testimonials/reviewer-photo-002-mobile.png");
+  }
+}
+.testimonials__reviewer-photo-003 {
+  background-image: url("../img/testimonials/reviewer-photo-003-desktop.png");
+
+  @include tablet-width-only {
+    background-image: url("../img/testimonials/reviewer-photo-003-tablet.png");
+  }
+
+  @include mobile-width-only {
+    background-image: url("../img/testimonials/reviewer-photo-003-mobile.png");
+  }
+}
+.testimonials__reviewer-photo-004 {
+  background-image: url("../img/testimonials/reviewer-photo-004-desktop.png");
+
+  @include tablet-width-only {
+    background-image: url("../img/testimonials/reviewer-photo-004-tablet.png");
+  }
+
+  @include mobile-width-only {
+    background-image: url("../img/testimonials/reviewer-photo-004-mobile.png");
   }
 }
 .testimonials__item-reviewer-wrapper {
@@ -253,6 +295,17 @@
   }
 }
 .testimonials__pagination {
+  @include mobile-width-only {
+    width: 100%;
+    top: 460px;
+    display: flex;
+    justify-content: center;
+  }
+
+  @include tablet-width-only {
+    top: 330px;
+  }
+
   position: absolute;
   top: 400px;
   left: 50%;
@@ -291,7 +344,7 @@
   padding-right: 30px;
   padding-left: 30px;
 }
-.testimonials__pagination-dot {
+.swiper-pagination-bullet {
   width: 10px;
   height: 9px;
   background-image: url("../img/icon-raster/pagination-dot.png");
@@ -300,8 +353,7 @@
   &:not(:last-child) {
     margin-right: 15px;
   }
-
-  &--active {
-    background-image: url("../img/icon-raster/pagination-dot-hover.png");
-  }
+}
+.swiper-pagination-bullet-active {
+  background-image: url("../img/icon-raster/pagination-dot-hover.png");
 }

@@ -1,3 +1,32 @@
+import Swiper from 'swiper';
+
+class TestimonialsSlider {
+  constructor(swiperContainer) {
+    this.swiperContainer = swiperContainer;
+    this.sliderInstance = null;
+  }
+
+  init() {
+    this.sliderInstance = new Swiper(this.swiperContainer, {
+      loop: true,
+      centeredSlides: true,
+      roundLengths: true,
+
+      navigation: {
+        nextEl: '.testimonials__pagination-right',
+        prevEl: '.testimonials__pagination-left',
+      },
+
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  }
+}
+
+export default TestimonialsSlider;
+
 const reviewTextWrapper = document.querySelector('.testimonials__item-reviewer-text');
 const reviewTextButton = document.querySelector('.testimonials__toggle-text');
 
@@ -9,6 +38,7 @@ reviewTextButton.addEventListener('click', () => {
   }
 });
 
+/*
 const nextSlideButton = document.querySelector('.testimonials__pagination-right');
 const prevSlideButton = document.querySelector('.testimonials__pagination-left');
 const slides = document.querySelectorAll('.testimonials__item');
@@ -97,3 +127,4 @@ const onClickPrevSlideButton = () => {
 
 nextSlideButton.addEventListener('click', onClickNextSlideButton);
 prevSlideButton.addEventListener('click', onClickPrevSlideButton);
+*/

@@ -12,3 +12,6 @@ const sendFeedback = new SendFeedback({
   sendButton: document.querySelector('.have-questions__send-button'),
 });
 sendFeedback.init();
+
+const reviewsSlider = new TestimonialsSlider('.slider-wrapper');
+reviewsSlider.init();
