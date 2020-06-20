@@ -5,18 +5,19 @@
   background-repeat: no-repeat;
   background-position: 50% -240px;
   overflow: hidden;
+  background-color: #fbfbfb;
 
   @include tablet-width-only {
-    padding-bottom: 0;
+    padding-bottom: 120px;
     background-image: url("../img/testimonials/main-background-tablet.png");
     background-position: 50% -270px;
-    background-color: #fcfcfc;
   }
 
   @include mobile-width-only {
     padding-top: 60px;
-    background-image: none;
-    background-color: #fcfcfc;
+    padding-bottom: 100px;
+    background-image: url("../img/testimonials/main-background-mobile.png");
+    background-position: 50% 310px;
   }
 }
 .testimonials__title {
@@ -121,37 +122,22 @@
 .slider-wrapper {
   position: relative;
   overflow: hidden;
-
-  &:before {
-    content: "";
-    position: absolute;
-    width: 1318px;
-    height: 630px;
-    top: -70px;
-    right: 50%;
-    transform: translateX(50%);
-    background-image: url("../img/testimonials/review-background-desktop.png");
-    background-repeat: no-repeat;
-    z-index: 10;
-
-    @include tablet-width-only {
-      width: 765px;
-      height: 541px;
-      background-image: url("../img/testimonials/review-background-tablet.png");
-    }
-
-    @include mobile-width-only {
-      width: 320px;
-      height: 727px;
-      background-image: url("../img/testimonials/review-background-mobile.png");
-    }
-  }
 }
 .testimonials__list {
   position: relative;
   display: flex;
-  min-height: 470px;
+  min-height: 380px;
+  margin-bottom: 20px;
   z-index: 30;
+
+  @include mobile-width-only {
+    min-height: 470px;
+  }
+
+  @include tablet-width-only {
+    min-height: 300px;
+    margin-bottom: 0;
+  }
 }
 .testimonials__item {
   position: relative;
@@ -270,7 +256,7 @@
   margin-bottom: 15px;
   line-height: 24px;
   color: #4d4d4d;
-  overflow: hidden;
+  overflow-y: auto;
   z-index: 20;
 
   @include tablet-width-only {
@@ -296,22 +282,25 @@
 }
 .testimonials__pagination {
   @include mobile-width-only {
+    /*
     width: 100%;
-    top: 460px;
+    top: 440px;
     display: flex;
     justify-content: center;
+    */
   }
 
   @include tablet-width-only {
-    top: 330px;
+    // top: 330px;
   }
 
-  position: absolute;
-  top: 400px;
-  left: 50%;
-  transform: translateX(-50%);
+  // position: absolute;
+  // top: 400px;
+  // left: 50%;
+  // transform: translateX(-50%);
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   z-index: 50;
 }
 .testimonials__pagination-right,
