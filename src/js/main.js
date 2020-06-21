@@ -1,17 +1,13 @@
 import YoutubeVideoPlayer from './modules/YoutubeVideoPlayer';
 import TestimonialsSlider from './modules/TestimonialsSlider';
 import FeedbackForm from './modules/FeedbackForm';
-import SendFeedback from './modules/SendFeedback';
 
-const feedbackForm = new FeedbackForm('#feedback-form');
-feedbackForm.init();
-
-const sendFeedback = new SendFeedback({
-  fieldPhone: document.querySelector('.have-questions__phone'),
-  fieldName: document.querySelector('.have-questions__name'),
-  sendButton: document.querySelector('.have-questions__send-button'),
+const feedbackForm = new FeedbackForm({
+  formOpeningElements: '.open-feedback-form-js',
+  feedbackFormWrapper: '.feedback-form',
+  closeButton: '.feedback-form__close-button',
+  sendButton: '.feedback-form__send-button',
+  nameField: '.feedback-form__name',
+  phoneField: '.feedback-form__phone',
 });
-sendFeedback.init();
-
-const reviewsSlider = new TestimonialsSlider('.slider-wrapper');
-reviewsSlider.init();
+feedbackForm.init();

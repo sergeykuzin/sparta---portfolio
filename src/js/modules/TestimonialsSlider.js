@@ -1,28 +1,17 @@
 import Swiper from 'swiper';
 
-class TestimonialsSlider {
-  constructor(swiperContainer) {
-    this.swiperContainer = swiperContainer;
-    this.sliderInstance = null;
-  }
+const testimonialsSlider = new Swiper('.slider-wrapper', {
+  loop: true,
+  centeredSlides: true,
+  roundLengths: true,
 
-  init() {
-    this.sliderInstance = new Swiper(this.swiperContainer, {
-      loop: true,
-      centeredSlides: true,
-      roundLengths: true,
+  navigation: {
+    nextEl: '.testimonials__pagination-right',
+    prevEl: '.testimonials__pagination-left',
+  },
 
-      navigation: {
-        nextEl: '.testimonials__pagination-right',
-        prevEl: '.testimonials__pagination-left',
-      },
-
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-    });
-  }
-}
-
-export default TestimonialsSlider;
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});

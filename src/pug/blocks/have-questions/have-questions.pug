@@ -6,7 +6,7 @@ section.have-questions
       p.have-questions__message
         | Оставьте свой номер телефона, наши менеджеры
         | с вами свяжутся и проконсультируют
-      form(action="#").have-questions__form-wrapper
-        input(type="text", placeholder="Имя").have-questions__name
-        input(type="text", placeholder="Телефон").have-questions__phone
+      form(action="#", onsubmit="alert('Отправлено'); return false").have-questions__form-wrapper
+        input(type="text", placeholder="Имя", required).have-questions__name
+        input(type="text", placeholder="Телефон", required).have-questions__phone
         button(type="submit").have-questions__send-button.main-button Отправить

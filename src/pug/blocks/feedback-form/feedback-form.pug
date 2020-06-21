@@ -5,7 +5,7 @@
       | Оставь свой номер телефона, наши менеджеры свяжутся
       | с тобой для подтверждения заявки
     form(action="#")
-      input(type="text", placeholder="Имя", name="name")
-      input(type="text", placeholder="Телефон", name="phone")
-      button(type="submit").main-button Отправить
+      input(type="text", placeholder="Имя", name="name", required).feedback-form__name
+      input(type="text", placeholder="Телефон", name="phone", required).feedback-form__phone
+      button(type="submit").main-button.feedback-form__send-button Отправить
     button(type="button").feedback-form__close-button Закрыть форму обратной связи

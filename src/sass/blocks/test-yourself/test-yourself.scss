@@ -44,12 +44,27 @@
     flex-direction: column;
     flex-wrap: wrap;
     margin-bottom: 45px;
+    margin-left: auto;
   }
 }
 .test-yourself__title {
-  font-family: $besom;
-  font-size: 120px;
-  color: #ff0000;
+  display: flex;
+  align-items: center;
+
+  @include tablet-width-only {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  @include mobile-width-only {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.test-yourself__title-first-word {
+    font-family: $besom;
+    font-size: 120px;
+    color: #ff0000;
 
   &+ span {
     margin-left: 40px;

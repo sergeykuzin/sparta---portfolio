@@ -281,23 +281,6 @@
   }
 }
 .testimonials__pagination {
-  @include mobile-width-only {
-    /*
-    width: 100%;
-    top: 440px;
-    display: flex;
-    justify-content: center;
-    */
-  }
-
-  @include tablet-width-only {
-    // top: 330px;
-  }
-
-  // position: absolute;
-  // top: 400px;
-  // left: 50%;
-  // transform: translateX(-50%);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

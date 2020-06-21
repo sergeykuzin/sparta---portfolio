@@ -1,11 +1,11 @@
 class FeedbackForm {
-  constructor(cssSelector) {
-    this.domElementsCausingForm = document.querySelectorAll(cssSelector);
-    this.domReference = document.querySelector('.feedback-form');
-    this.closeButton = document.querySelector('.feedback-form__close-button');
-    this.sendButton = document.querySelector('.feedback-form button[type="submit"]');
-    this.nameField = document.querySelector('.feedback-form input[name="name"]');
-    this.phoneField = document.querySelector('.feedback-form input[name="phone"]');
+  constructor(params) {
+    this.formOpeningElements = document.querySelectorAll(params.formOpeningElements);
+    this.feedbackFormWrapper = document.querySelector(params.feedbackFormWrapper);
+    this.closeButton = document.querySelector(params.closeButton);
+    this.sendButton = document.querySelector(params.sendButton);
+    this.nameField = document.querySelector(params.nameField);
+    this.phoneField = document.querySelector(params.phoneField);
   }
 
   init() {
@@ -13,21 +13,21 @@ class FeedbackForm {
   }
 
   addEventListener() {
-    this.domElementsCausingForm.forEach((domElement) => {
+    this.formOpeningElements.forEach((domElement) => {
       domElement.addEventListener('click', this.open.bind(this));
     });
 
     this.closeButton.addEventListener('click', this.close.bind(this));
-    this.domReference.addEventListener('click', this.onClick.bind(this));
+    this.feedbackFormWrapper.addEventListener('click', this.onClick.bind(this));
     this.sendButton.addEventListener('click', this.send.bind(this));
   }
 
   open() {
-    this.domReference.style.display = 'flex';
+    this.feedbackFormWrapper.style.display = 'flex';
   }
 
   close() {
-    this.domReference.style.display = 'none';
+    this.feedbackFormWrapper.style.display = 'none';
   }
 
   send(event) {
