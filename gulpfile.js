@@ -8,6 +8,7 @@ const pug = require('gulp-pug');
 const webpack = require('webpack-stream');
 const browsersync = require('browser-sync');
 const del = require('del');
+const webp = require('gulp-webp');
 
 const dist = './dist/';
 
@@ -24,6 +25,17 @@ gulp.task('buildCss', () => gulp
   .pipe(csso({ restructure: true }))
   .pipe(gulp.dest(`${dist}css/`))
   .pipe(browsersync.stream()));
+
+gulp.task('createWebp', () => gulp
+  .src([
+    './src/img/**',
+    '!./src/img/sprite/**',
+    '!./src/img/webp/**',
+    '!./src/img/icon-raster/**',
+    '!./src/img/icon-vector/**',
+  ], { nodir: true })
+  .pipe(webp({ quality: 90 }))
+  .pipe(gulp.dest('./src/img/webp/')));
 
 gulp.task('copyImage', () => gulp
   .src('./src/img/**/*')
@@ -86,7 +98,7 @@ gulp.task('watch', () => {
   gulp.watch('./src/img/**/*', gulp.parallel('copyImage'));
 });
 
-gulp.task('build', gulp.series('clean', 'buildHtml', 'buildCss', 'build-js', 'copyImage', 'copyFonts'));
+gulp.task('build', gulp.series('clean', 'buildHtml', 'buildCss', 'build-js', 'createWebp', 'copyImage', 'copyFonts'));
 
 gulp.task('build-prod-js', () => gulp
   .src('./src/js/main.js')
