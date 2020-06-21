@@ -51,6 +51,7 @@
   height: 90px;
   background-image: url("../img/page-header/logo.svg");
   background-repeat: no-repeat;
+  font-size: 0;
 
   @include tablet-width-only {
     width: 165px;
