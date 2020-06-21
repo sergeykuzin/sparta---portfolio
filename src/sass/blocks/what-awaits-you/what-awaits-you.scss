@@ -75,12 +75,14 @@
     top: -30px;
     position: absolute;
     background-image: url("../img/what-awaits-you/decor-dot-line.png");
+    background-image: url("../img/webp/what-awaits-you/decor-dot-line.webp");
     background-repeat: no-repeat;
 
     @include tablet-width-only {
       left: 180px;
       top: -50px;
       background-image: url("../img/what-awaits-you/decor-dot-line-tablet.png");
+      background-image: url("../img/webp/what-awaits-you/decor-dot-line-tablet.webp");
     }
 
     @include mobile-width-only {
@@ -91,6 +93,7 @@
       width: 57px;
       height: 56px;
       background-image: url("../img/what-awaits-you/finish-and-dot-mobile.png");
+      background-image: url("../img/webp/what-awaits-you/finish-and-dot-mobile.webp");
     }
   }
 
@@ -110,6 +113,7 @@
       width: 50px;
       height: 60px;
       background-image: url("../img/what-awaits-you/start-and-dot-mobile.png");
+      background-image: url("../img/webp/what-awaits-you/start-and-dot-mobile.webp");
     }
   }
 }
@@ -143,44 +147,52 @@
   width: 366px;
   height: 300px;
   background-image: url("../img/what-awaits-you/special-knowledge.png");
+  background-image: url("../img/webp/what-awaits-you/special-knowledge.webp");
 
   @include mobile {
     width: 290px;
     height: 237px;
     background-image: url("../img/what-awaits-you/special-knowledge-tablet.png");
+    background-image: url("../img/webp/what-awaits-you/special-knowledge-tablet.webp");
   }
 }
 .what-awaits-you__image-special-skills {
   width: 373px;
   height: 312px;
   background-image: url("../img/what-awaits-you/special-skills.png");
+  background-image: url("../img/webp/what-awaits-you/special-skills.webp");
 
   @include mobile {
     width: 291px;
     height: 243px;
     background-image: url("../img/what-awaits-you/special-skills-tablet.png");
+    background-image: url("../img/webp/what-awaits-you/special-skills-tablet.webp");
   }
 }
 .what-awaits-you__image-extreme {
   width: 374px;
   height: 385px;
   background-image: url("../img/what-awaits-you/extreme.png");
+  background-image: url("../img/webp/what-awaits-you/extreme.webp");
 
   @include mobile {
     width: 320px;
     height: 333px;
     background-image: url("../img/what-awaits-you/extreme-tablet.png");
+    background-image: url("../img/webp/what-awaits-you/extreme-tablet.webp");
   }
 }
 .what-awaits-you__image-constant-stress {
   width: 393px;
   height: 321px;
   background-image: url("../img/what-awaits-you/constant-stress.png");
+  background-image: url("../img/webp/what-awaits-you/constant-stress.webp");
 
   @include mobile {
     width: 343px;
     height: 280px;
     background-image: url("../img/what-awaits-you/constant-stress-tablet.png");
+    background-image: url("../img/webp/what-awaits-you/constant-stress-tablet.webp");
   }
 }
 .what-awaits-you__item:not(:first-child) {

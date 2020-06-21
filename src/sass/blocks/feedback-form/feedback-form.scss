@@ -34,6 +34,7 @@
   min-height: 675px;
   padding: 70px 130px 80px 120px;
   background-image: url("../img/feedback-form/feedback-form-background.png");
+  background-image: url("../img/webp/feedback-form/feedback-form-background.webp");
   background-repeat: no-repeat;
 
   @include mobile-width-only {
@@ -80,9 +81,11 @@
     width: 360px;
     height: 73px;
     background-image: url("../img/have-questions/button-large.png");
+    background-image: url("../img/webp/have-questions/button-large.webp");
 
     &:hover {
       background-image: url("../img/have-questions/button-large-hover.png");
+      background-image: url("../img/webp/have-questions/button-large-hover.webp");
     }
   }
 }

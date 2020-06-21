@@ -2,6 +2,7 @@
   min-height: 889px;
   padding-top: 180px;
   background-image: url("../img/have-questions/have-questions-background-desktop.png");
+  background-image: url("../img/webp/have-questions/have-questions-background-desktop.webp");
   background-repeat: no-repeat;
   background-position: 50% 0;
 
@@ -9,12 +10,14 @@
     min-height: 648px;
     padding-top: 65px;
     background-image: url("../img/have-questions/have-questions-background-tablet.png");
+    background-image: url("../img/webp/have-questions/have-questions-background-tablet.webp");
   }
 
   @include mobile-width-only {
     min-height: 648px;
     padding-top: 75px;
     background-image: url("../img/have-questions/have-questions-background-mobile.png");
+    background-image: url("../img/webp/have-questions/have-questions-background-mobile.webp");
   }
 }
 .have-questions__inner {
@@ -85,9 +88,11 @@
     width: 360px;
     height: 73px;
     background-image: url("../img/have-questions/button-large.png");
+    background-image: url("../img/webp/have-questions/button-large.webp");
 
     &:hover {
       background-image: url("../img/have-questions/button-large-hover.png");
+      background-image: url("../img/webp/have-questions/button-large-hover.webp");
     }
   }
 }

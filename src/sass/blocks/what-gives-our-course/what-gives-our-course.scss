@@ -2,6 +2,7 @@
   min-height: 929px;
   padding-top: 195px;
   background-image: url("../img/what-gives-our-course/main-background-desktop.png");
+  background-image: url("../img/webp/what-gives-our-course/main-background-desktop.webp");
   background-repeat: no-repeat;
   background-position: 50% 0;
 
@@ -9,12 +10,14 @@
     min-height: 985px;
     padding-top: 170px;
     background-image: url("../img/what-gives-our-course/main-background-tablet.png");
+    background-image: url("../img/webp/what-gives-our-course/main-background-tablet.webp");
   }
 
   @include mobile-width-only {
     min-height: 1388px;
     padding-top: 130px;
     background-image: url("../img/what-gives-our-course/main-background-mobile.png");
+    background-image: url("../img/webp/what-gives-our-course/main-background-mobile.webp");
     background-position: 50% 0;
   }
 }
@@ -37,12 +40,14 @@
   min-height: 342px;
   margin-bottom: 65px;
   background-image: url("../img/what-gives-our-course/red-border-desktop.png");
+  background-image: url("../img/webp/what-gives-our-course/red-border-desktop.webp");
   background-repeat: no-repeat;
 
   @include tablet-width-only {
     min-height: 367px;
     margin-bottom: 60px;
     background-image: url("../img/what-gives-our-course/red-border-tablet.png");
+    background-image: url("../img/webp/what-gives-our-course/red-border-tablet.webp");
   }
 
   @include mobile-width-only {
@@ -50,6 +55,7 @@
     flex-direction: column;
     min-height: 693px;
     background-image: url("../img/what-gives-our-course/red-border-mobile.png");
+    background-image: url("../img/webp/what-gives-our-course/red-border-mobile.webp");
   }
 }
 .what-gives-our-course__title {
@@ -64,6 +70,7 @@
   text-transform: uppercase;
   color: #fff;
   background-image: url("../img/what-gives-our-course/what-gives-our-course-background-desktop.png");
+  background-image: url("../img/webp/what-gives-our-course/what-gives-our-course-background-desktop.webp");
   background-repeat: no-repeat;
 
   @include tablet-width-only {
@@ -71,6 +78,7 @@
     min-height: 366px;
     padding-left: 30px;
     background-image: url("../img/what-gives-our-course/what-gives-our-course-background-tablet.png");
+    background-image: url("../img/webp/what-gives-our-course/what-gives-our-course-background-tablet.webp");
   }
 
   @include mobile-width-only {
@@ -80,6 +88,7 @@
     min-height: 277px;
     align-items: flex-start;
     background-image: url("../img/what-gives-our-course/what-gives-our-course-background-mobile.png");
+    background-image: url("../img/webp/what-gives-our-course/what-gives-our-course-background-mobile.webp");
   }
 }
 .what-gives-our-course__list {
@@ -201,6 +210,7 @@
     height: 143px;
     margin-right: 40px;
     background-image: url("../img/what-gives-our-course/icon-exclamation-mark.png");
+    background-image: url("../img/webp/what-gives-our-course/icon-exclamation-mark.webp");
     background-repeat: no-repeat;
 
     @include tablet-width-only {

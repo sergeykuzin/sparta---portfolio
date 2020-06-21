@@ -2,16 +2,19 @@
   width: 100%;
   min-height: 574px;
   background-image: url("../img/photos/photo-desktop.png");
+  background-image: url("../img/webp/photos/photo-desktop.webp");
   background-repeat: no-repeat;
   background-position: 50% 0;
 
   @include tablet-width-only {
     min-height: 473px;
     background-image: url("../img/photos/photo-tablet.png");
+    background-image: url("../img/webp/photos/photo-tablet.webp");
   }
 
   @include mobile-width-only {
     min-height: 284px;
     background-image: url("../img/photos/photo-mobile.png");
+    background-image: url("../img/webp/photos/photo-mobile.webp");
   }
 }

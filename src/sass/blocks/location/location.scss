@@ -2,6 +2,7 @@
   min-height: 890px;
   padding-top: 100px;
   background-image: url("../img/location/map-background-desktop.png");
+  background-image: url("../img/webp/location/map-background-desktop.webp");
   background-repeat: no-repeat;
   background-position: 50% 230px;
   background-color: #f9f9f9;
@@ -11,6 +12,7 @@
     min-height: 830px;
     padding-top: 50px;
     background-image: url("../img/location/map-background-tablet.png");
+    background-image: url("../img/webp/location/map-background-tablet.webp");
     background-position: 50% 150px;
   }
 
@@ -18,6 +20,7 @@
     padding-top: 0;
     min-height: 630px;
     background-image: url("../img/location/map-background-mobile.png");
+    background-image: url("../img/webp/location/map-background-mobile.webp");
     background-position: 50% 130px;
   }
 }

@@ -3,18 +3,21 @@
   padding-top: 180px;
   overflow: hidden;
   background-image: url("../img/you-will-gain-skill/man-with-map-desktop.png");
+  background-image: url("../img/webp/you-will-gain-skill/man-with-map-desktop.webp");
   background-repeat: no-repeat;
   background-position: -350px 260px;
 
   @include tablet-width-only {
     padding-top: 100px;
     background-image: url("../img/you-will-gain-skill/man-with-map-tablet.png");
+    background-image: url("../img/webp/you-will-gain-skill/man-with-map-tablet.webp");
     background-position: 0px 370px;
   }
 
   @include mobile-width-only {
     padding-top: 60px;
     background-image: url("../img/you-will-gain-skill/list-background-mobile.png");
+    background-image: url("../img/webp/you-will-gain-skill/list-background-mobile.webp");
     background-position: 0px 180px;
   }
 }
@@ -63,6 +66,7 @@
   padding-top: 100px;
   padding-left: 640px;
   background-image: url("../img/you-will-gain-skill/list-background-desktop.png");
+  background-image: url("../img/webp/you-will-gain-skill/list-background-desktop.webp");
   background-repeat: no-repeat;
   background-position: 370px 40px;
 
@@ -71,6 +75,7 @@
     padding-top: 80px;
     padding-left: 280px;
     background-image: url("../img/you-will-gain-skill/list-background-tablet.png");
+    background-image: url("../img/webp/you-will-gain-skill/list-background-tablet.webp");
     background-position: 20px 20px;
   }
 
