@@ -1,15 +1,11 @@
 .course-program {
   padding-top: 150px;
   padding-bottom: 104px;
-  background-image: url("../img/course-program/main-background-desktop.png");
-  background-image: url("../img/webp/course-program/main-background-desktop.webp");
   background-repeat: no-repeat;
   background-position: 0 350px;
   overflow: hidden;
 
   @include tablet-width-only {
-    background-image: url("../img/course-program/main-background-tablet.png");
-    background-image: url("../img/webp/course-program/main-background-tablet.webp");
     background-position: 0 280px;
   }
 
@@ -17,9 +13,29 @@
     min-height: 939px;
     padding-top: 30px;
     padding-bottom: 85px;
-    background-image: url("../img/course-program/main-background-mobile.png");
-    background-image: url("../img/webp/course-program/main-background-mobile.webp");
     background-position: 0 0;
+  }
+}
+.no-webp .course-program {
+  background-image: url("../img/course-program/main-background-desktop.png");
+
+  @include tablet-width-only {
+    background-image: url("../img/course-program/main-background-tablet.png");
+  }
+
+  @include mobile-width-only {
+    background-image: url("../img/course-program/main-background-mobile.png");
+  }
+}
+.webp .course-program {
+  background-image: url("../img/webp/course-program/main-background-desktop.webp");
+
+  @include tablet-width-only {
+    background-image: url("../img/webp/course-program/main-background-tablet.webp");
+  }
+
+  @include mobile-width-only {
+    background-image: url("../img/webp/course-program/main-background-mobile.webp");
   }
 }
 .course-program__title {

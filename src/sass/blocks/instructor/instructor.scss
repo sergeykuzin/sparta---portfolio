@@ -48,8 +48,6 @@
   width: 290px;
   height: 290px;
   margin-right: 40px;
-  background-image: url("../img/instructor/photo.png");
-  background-image: url("../img/webp/instructor/photo.webp");
   background-repeat: no-repeat;
   flex-shrink: 0;
 
@@ -62,6 +60,12 @@
     margin-right: 0;
     margin-bottom: 20px;
   }
+}
+.no-webp .instructor__photo {
+  background-image: url("../img/instructor/photo.png");
+}
+.webp .instructor__photo {
+  background-image: url("../img/webp/instructor/photo.webp");
 }
 .instructor__name {
   flex-shrink: 0;
@@ -86,8 +90,6 @@
   margin-left: -158px;
   padding-left: 60px;
   padding-top: 50px;
-  background-image: url("../img/instructor/red-line.png");
-  background-image: url("../img/webp/instructor/red-line.webp");
   background-position: -6px 57px;
   background-repeat: no-repeat;
 
@@ -104,9 +106,21 @@
     margin-left: 0;
     padding-top: 0;
     padding-left: 50px;
-    background-image: url("../img/instructor/red-line-mobile.png");
-    background-image: url("../img/webp/instructor/red-line-mobile.webp");
     background-position: -6px 7px;
+  }
+}
+.no-webp .instructor-statistics-in-text {
+  background-image: url("../img/instructor/red-line.png");
+
+  @include mobile-width-only {
+    background-image: url("../img/instructor/red-line-mobile.png");
+  }
+}
+.webp .instructor-statistics-in-text {
+  background-image: url("../img/webp/instructor/red-line.webp");
+
+  @include mobile-width-only {
+    background-image: url("../img/webp/instructor/red-line-mobile.webp");
   }
 }
 .instructor-statistics-in-text__item {

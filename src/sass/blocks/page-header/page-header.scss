@@ -1,22 +1,38 @@
 .page-header {
   min-height: 1006px;
-  background-image: url("../img/page-header/main-background-desktop.jpg");
-  background-image: url("../img/webp/page-header/main-background-desktop.webp");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 
   @include tablet-width-only {
     min-height: 602px;
-    background-image: url("../img/page-header/main-background-tablet.jpg");
-    background-image: url("../img/webp/page-header/main-background-tablet.webp");
     background-position: 50% 0;
   }
 
   @include mobile-width-only {
     min-height: 626px;
-    background-image: url("../img/page-header/main-background-mobile.jpg");
-    background-image: url("../img/webp/page-header/main-background-mobile.webp");
     background-position: 50% 0;
+  }
+}
+.no-webp .page-header {
+  background-image: url("../img/page-header/main-background-desktop.jpg");
+
+  @include tablet-width-only {
+    background-image: url("../img/page-header/main-background-tablet.jpg");
+  }
+
+  @include mobile-width-only {
+    background-image: url("../img/page-header/main-background-mobile.jpg");
+  }
+}
+.webp .page-header {
+  background-image: url("../img/webp/page-header/main-background-desktop.webp");
+
+  @include tablet-width-only {
+    background-image: url("../img/webp/page-header/main-background-tablet.webp");
+  }
+
+  @include mobile-width-only {
+    background-image: url("../img/webp/page-header/main-background-mobile.webp");
   }
 }
 .container.page-header__inner {
@@ -85,8 +101,6 @@
     transform: translateX(-50%);
     width: 351px;
     height: 14px;
-    background-image: url("../img/page-header/text-blur-background.png");
-    background-image: url("../img/webp/page-header/text-blur-background.webp");
 
     @include tablet-width-only {
       width: 351px;
@@ -96,8 +110,6 @@
     @include mobile-width-only {
       top: 7px;
       width: 271px;
-      background-image: url("../img/page-header/text-blur-background-mobile.png");
-      background-image: url("../img/webp/page-header/text-blur-background-mobile.webp");
     }
   }
 
@@ -109,6 +121,24 @@
     order: 3;
     margin-top: 45px;
     font-size: 16px;
+  }
+}
+.no-webp .page-header__subtitle {
+  &:after {
+    background-image: url("../img/page-header/text-blur-background.png");
+
+    @include mobile-width-only {
+      background-image: url("../img/page-header/text-blur-background-mobile.png");
+    }
+  }
+}
+.webp .page-header__subtitle {
+  &:after {
+    background-image: url("../img/webp/page-header/text-blur-background.webp");
+
+    @include mobile-width-only {
+      background-image: url("../img/webp/page-header/text-blur-background-mobile.webp");
+    }
   }
 }
 .telephone {

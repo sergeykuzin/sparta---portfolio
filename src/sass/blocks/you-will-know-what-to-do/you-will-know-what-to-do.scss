@@ -65,28 +65,18 @@
 
   &:nth-child(1):before {
     height: 138px;
-    background-image: url("../img/you-will-know-what-to-do/decor-01.png");
-    background-image: url("../img/webp/you-will-know-what-to-do/decor-01.webp");
   }
   &:nth-child(2):before {
     height: 135px;
-    background-image: url("../img/you-will-know-what-to-do/decor-02.png");
-    background-image: url("../img/webp/you-will-know-what-to-do/decor-02.webp");
   }
   &:nth-child(3):before {
     height: 135px;
-    background-image: url("../img/you-will-know-what-to-do/decor-03.png");
-    background-image: url("../img/webp/you-will-know-what-to-do/decor-03.webp");
   }
   &:nth-child(4):before {
     height: 140px;
-    background-image: url("../img/you-will-know-what-to-do/decor-04.png");
-    background-image: url("../img/webp/you-will-know-what-to-do/decor-04.webp");
   }
   &:nth-child(5):before {
     height: 142px;
-    background-image: url("../img/you-will-know-what-to-do/decor-05.png");
-    background-image: url("../img/webp/you-will-know-what-to-do/decor-05.webp");
   }
 
   &:not(:last-child) {
@@ -111,6 +101,40 @@
     width: auto;
     justify-content: center;
     text-align: center;
+  }
+}
+.no-webp .you-will-know-what-to-do__item {
+  &:nth-child(1):before {
+    background-image: url("../img/you-will-know-what-to-do/decor-01.png");
+  }
+  &:nth-child(2):before {
+    background-image: url("../img/you-will-know-what-to-do/decor-02.png");
+  }
+  &:nth-child(3):before {
+    background-image: url("../img/you-will-know-what-to-do/decor-03.png");
+  }
+  &:nth-child(4):before {
+    background-image: url("../img/you-will-know-what-to-do/decor-04.png");
+  }
+  &:nth-child(5):before {
+    background-image: url("../img/you-will-know-what-to-do/decor-05.png");
+  }
+}
+.webp .you-will-know-what-to-do__item {
+  &:nth-child(1):before {
+    background-image: url("../img/webp/you-will-know-what-to-do/decor-01.webp");
+  }
+  &:nth-child(2):before {
+    background-image: url("../img/webp/you-will-know-what-to-do/decor-02.webp");
+  }
+  &:nth-child(3):before {
+    background-image: url("../img/webp/you-will-know-what-to-do/decor-03.webp");
+  }
+  &:nth-child(4):before {
+    background-image: url("../img/webp/you-will-know-what-to-do/decor-04.webp");
+  }
+  &:nth-child(5):before {
+    background-image: url("../img/webp/you-will-know-what-to-do/decor-05.webp");
   }
 }
 .you-will-know-what-to-do__item-wrapper {

@@ -1,8 +1,6 @@
 .testimonials {
   padding-top: 120px;
   padding-bottom: 100px;
-  background-image: url("../img/testimonials/main-background-desktop.png");
-  background-image: url("../img/webp/testimonials/main-background-desktop.webp");
   background-repeat: no-repeat;
   background-position: 50% -240px;
   overflow: hidden;
@@ -10,17 +8,35 @@
 
   @include tablet-width-only {
     padding-bottom: 120px;
-    background-image: url("../img/testimonials/main-background-tablet.png");
-    background-image: url("../img/webp/testimonials/main-background-tablet.webp");
     background-position: 50% -270px;
   }
 
   @include mobile-width-only {
     padding-top: 60px;
     padding-bottom: 100px;
-    background-image: url("../img/testimonials/main-background-mobile.png");
-    background-image: url("../img/webp/testimonials/main-background-mobile.webp");
     background-position: 50% 310px;
+  }
+}
+.no-webp .testimonials {
+  background-image: url("../img/testimonials/main-background-desktop.png");
+
+  @include tablet-width-only {
+    background-image: url("../img/testimonials/main-background-tablet.png");
+  }
+
+  @include mobile-width-only {
+    background-image: url("../img/testimonials/main-background-mobile.png");
+  }
+}
+.webp .testimonials {
+  background-image: url("../img/testimonials/main-background-desktop.webp");
+
+  @include tablet-width-only {
+    background-image: url("../img/testimonials/main-background-tablet.webp");
+  }
+
+  @include mobile-width-only {
+    background-image: url("../img/testimonials/main-background-mobile.webp");
   }
 }
 .testimonials__title {
@@ -76,8 +92,6 @@
   margin-bottom: 60px;
   margin-right: auto;
   margin-left: auto;
-  background-image: url("../img/testimonials/media-player-desktop.jpg");
-  background-image: url("../img/webp/testimonials/media-player-desktop.webp");
   background-repeat: no-repeat;
   z-index: 2000;
 
@@ -85,14 +99,32 @@
     width: 723px;
     height: 407px;
     margin-bottom: 80px;
-    background-image: url("../img/testimonials/media-player-tablet.jpg");
-    background-image: url("../img/webp/testimonials/media-player-tablet.webp");
   }
 
   @include mobile-width-only {
     width: 292px;
     height: 164px;
+  }
+}
+.no-webp .video-player-wrapper {
+  background-image: url("../img/testimonials/media-player-desktop.jpg");
+
+  @include tablet-width-only {
+    background-image: url("../img/testimonials/media-player-tablet.jpg");
+  }
+
+  @include mobile-width-only {
     background-image: url("../img/testimonials/media-player-mobile.jpg");
+  }
+}
+.webp .video-player-wrapper {
+  background-image: url("../img/webp/testimonials/media-player-desktop.webp");
+
+  @include tablet-width-only {
+    background-image: url("../img/webp/testimonials/media-player-tablet.webp");
+  }
+
+  @include mobile-width-only {
     background-image: url("../img/webp/testimonials/media-player-mobile.webp");
   }
 }
@@ -194,59 +226,91 @@
     margin-bottom: 20px;
   }
 }
-.testimonials__reviewer-photo-001 {
+.no-webp .testimonials__reviewer-photo-001 {
   background-image: url("../img/testimonials/reviewer-photo-001-desktop.png");
-  background-image: url("../img/webp/testimonials/reviewer-photo-001-desktop.webp");
 
   @include tablet-width-only {
     background-image: url("../img/testimonials/reviewer-photo-001-tablet.png");
-    background-image: url("../img/webp/testimonials/reviewer-photo-001-tablet.webp");
   }
 
   @include mobile-width-only {
     background-image: url("../img/testimonials/reviewer-photo-001-mobile.png");
+  }
+}
+.webp .testimonials__reviewer-photo-001 {
+  background-image: url("../img/webp/testimonials/reviewer-photo-001-desktop.webp");
+
+  @include tablet-width-only {
+    background-image: url("../img/webp/testimonials/reviewer-photo-001-tablet.webp");
+  }
+
+  @include mobile-width-only {
     background-image: url("../img/webp/testimonials/reviewer-photo-001-mobile.webp");
   }
 }
-.testimonials__reviewer-photo-002 {
+.no-webp .testimonials__reviewer-photo-002 {
   background-image: url("../img/testimonials/reviewer-photo-002-desktop.png");
-  background-image: url("../img/webp/testimonials/reviewer-photo-002-desktop.webp");
 
   @include tablet-width-only {
     background-image: url("../img/testimonials/reviewer-photo-002-tablet.png");
-    background-image: url("../img/webp/testimonials/reviewer-photo-002-tablet.webp");
   }
 
   @include mobile-width-only {
     background-image: url("../img/testimonials/reviewer-photo-002-mobile.png");
+  }
+}
+.webp .testimonials__reviewer-photo-002 {
+  background-image: url("../img/webp/testimonials/reviewer-photo-002-desktop.webp");
+
+  @include tablet-width-only {
+    background-image: url("../img/webp/testimonials/reviewer-photo-002-tablet.webp");
+  }
+
+  @include mobile-width-only {
     background-image: url("../img/webp/testimonials/reviewer-photo-002-mobile.webp");
   }
 }
-.testimonials__reviewer-photo-003 {
+.no-webp .testimonials__reviewer-photo-003 {
   background-image: url("../img/testimonials/reviewer-photo-003-desktop.png");
-  background-image: url("../img/webp/testimonials/reviewer-photo-003-desktop.webp");
 
   @include tablet-width-only {
     background-image: url("../img/testimonials/reviewer-photo-003-tablet.png");
-    background-image: url("../img/webp/testimonials/reviewer-photo-003-tablet.webp");
   }
 
   @include mobile-width-only {
     background-image: url("../img/testimonials/reviewer-photo-003-mobile.png");
+  }
+}
+.webp .testimonials__reviewer-photo-003 {
+  background-image: url("../img/webp/testimonials/reviewer-photo-003-desktop.webp");
+
+  @include tablet-width-only {
+    background-image: url("../img/webp/testimonials/reviewer-photo-003-tablet.webp");
+  }
+
+  @include mobile-width-only {
     background-image: url("../img/webp/testimonials/reviewer-photo-003-mobile.webp");
   }
 }
-.testimonials__reviewer-photo-004 {
+.no-webp .testimonials__reviewer-photo-004 {
   background-image: url("../img/testimonials/reviewer-photo-004-desktop.png");
-  background-image: url("../img/webp/testimonials/reviewer-photo-004-desktop.webp");
 
   @include tablet-width-only {
     background-image: url("../img/testimonials/reviewer-photo-004-tablet.png");
-    background-image: url("../img/webp/testimonials/reviewer-photo-004-tablet.webp");
   }
 
   @include mobile-width-only {
     background-image: url("../img/testimonials/reviewer-photo-004-mobile.png");
+  }
+}
+.webp .testimonials__reviewer-photo-004 {
+  background-image: url("../img/webp/testimonials/reviewer-photo-004-desktop.webp");
+
+  @include tablet-width-only {
+    background-image: url("../img/webp/testimonials/reviewer-photo-004-tablet.webp");
+  }
+
+  @include mobile-width-only {
     background-image: url("../img/webp/testimonials/reviewer-photo-004-mobile.webp");
   }
 }

@@ -1,16 +1,26 @@
 .test-yourself {
-  background-image: url("../img/test-yourself/main-background-desktop.png");
-  background-image: url("../img/webp/test-yourself/main-background-desktop.webp");
   background-repeat: no-repeat;
   background-position: 50% 0;
+}
+.no-webp .test-yourself {
+  background-image: url("../img/test-yourself/main-background-desktop.png");
 
   @include tablet-width-only {
     background-image: url("../img/test-yourself/main-background-tablet.png");
-    background-image: url("../img/webp/test-yourself/main-background-tablet.webp");
   }
 
   @include mobile-width-only {
     background-image: url("../img/test-yourself/main-background-mobile.png");
+  }
+}
+.webp .test-yourself {
+  background-image: url("../img/webp/test-yourself/main-background-desktop.webp");
+
+  @include tablet-width-only {
+    background-image: url("../img/webp/test-yourself/main-background-tablet.webp");
+  }
+
+  @include mobile-width-only {
     background-image: url("../img/webp/test-yourself/main-background-mobile.webp");
   }
 }

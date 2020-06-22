@@ -1,22 +1,38 @@
 .have-questions {
   min-height: 889px;
   padding-top: 180px;
-  background-image: url("../img/have-questions/have-questions-background-desktop.png");
-  background-image: url("../img/webp/have-questions/have-questions-background-desktop.webp");
   background-repeat: no-repeat;
   background-position: 50% 0;
 
   @include tablet-width-only {
     min-height: 648px;
     padding-top: 65px;
-    background-image: url("../img/have-questions/have-questions-background-tablet.png");
-    background-image: url("../img/webp/have-questions/have-questions-background-tablet.webp");
   }
 
   @include mobile-width-only {
     min-height: 648px;
     padding-top: 75px;
+  }
+}
+.no-webp .have-questions {
+  background-image: url("../img/have-questions/have-questions-background-desktop.png");
+
+  @include tablet-width-only {
+    background-image: url("../img/have-questions/have-questions-background-tablet.png");
+  }
+
+  @include mobile-width-only {
     background-image: url("../img/have-questions/have-questions-background-mobile.png");
+  }
+}
+.webp .have-questions {
+  background-image: url("../img/webp/have-questions/have-questions-background-desktop.webp");
+
+  @include tablet-width-only {
+    background-image: url("../img/webp/have-questions/have-questions-background-tablet.webp");
+  }
+
+  @include mobile-width-only {
     background-image: url("../img/webp/have-questions/have-questions-background-mobile.webp");
   }
 }
@@ -87,11 +103,22 @@
   @include tablet {
     width: 360px;
     height: 73px;
+  }
+}
+.no-webp .have-questions__form-wrapper .main-button {
+  @include tablet {
     background-image: url("../img/have-questions/button-large.png");
-    background-image: url("../img/webp/have-questions/button-large.webp");
 
     &:hover {
       background-image: url("../img/have-questions/button-large-hover.png");
+    }
+  }
+}
+.webp .have-questions__form-wrapper .main-button {
+  @include tablet {
+    background-image: url("../img/webp/have-questions/button-large.webp");
+
+    &:hover {
       background-image: url("../img/webp/have-questions/button-large-hover.webp");
     }
   }
