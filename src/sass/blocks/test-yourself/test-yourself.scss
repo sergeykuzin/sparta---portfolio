@@ -3,6 +3,10 @@
   background-position: 50% 0;
 }
 .no-webp .test-yourself {
+  &.lazy {
+    background-image: none;
+  }
+
   background-image: url("../img/test-yourself/main-background-desktop.png");
 
   @include tablet-width-only {
@@ -14,6 +18,10 @@
   }
 }
 .webp .test-yourself {
+  &.lazy {
+    background-image: none;
+  }
+
   background-image: url("../img/webp/test-yourself/main-background-desktop.webp");
 
   @include tablet-width-only {

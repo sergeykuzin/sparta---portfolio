@@ -13,6 +13,10 @@
   }
 }
 .no-webp .photos {
+  &.lazy {
+    background-image: none;
+  }
+
   background-image: url("../img/photos/photo-desktop.png");
 
   @include tablet-width-only {
@@ -24,6 +28,10 @@
   }
 }
 .webp .photos {
+  &.lazy {
+    background-image: none;
+  }
+
   background-image: url("../img/webp/photos/photo-desktop.webp");
 
   @include tablet-width-only {

@@ -20,6 +20,10 @@
 }
 
 .no-webp .location {
+  &.lazy {
+    background-image: none;
+  }
+
   background-image: url("../img/location/map-background-desktop.png");
 
   @include tablet-width-only {
@@ -32,6 +36,10 @@
 }
 
 .webp .location {
+  &.lazy {
+    background-image: none;
+  }
+
   background-image: url("../img/webp/location/map-background-desktop.webp");
 
   @include tablet-width-only {

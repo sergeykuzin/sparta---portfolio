@@ -183,6 +183,10 @@
   }
 }
 .no-webp .what-awaits-you__image-special-knowledge {
+  &.lazy {
+    background-image: none;
+  }
+  
   background-image: url("../img/what-awaits-you/special-knowledge.png");
 
   @include mobile {
@@ -190,6 +194,10 @@
   }
 }
 .webp .what-awaits-you__image-special-knowledge {
+  &.lazy {
+    background-image: none;
+  }
+
   background-image: url("../img/webp/what-awaits-you/special-knowledge.webp");
 
   @include mobile {
@@ -206,6 +214,10 @@
   }
 }
 .no-webp .what-awaits-you__image-special-skills {
+  &.lazy {
+    background-image: none;
+  }
+
   background-image: url("../img/what-awaits-you/special-skills.png");
 
   @include mobile {
@@ -213,6 +225,10 @@
   }
 }
 .webp .what-awaits-you__image-special-skills {
+  &.lazy {
+    background-image: none;
+  }
+
   background-image: url("../img/webp/what-awaits-you/special-skills.webp");
 
   @include mobile {
@@ -229,6 +245,10 @@
   }
 }
 .no-webp .what-awaits-you__image-extreme {
+  &.lazy {
+    background-image: none;
+  }
+
   background-image: url("../img/what-awaits-you/extreme.png");
 
   @include mobile {
@@ -236,6 +256,10 @@
   }
 }
 .webp .what-awaits-you__image-extreme {
+  &.lazy {
+    background-image: none;
+  }
+
   background-image: url("../img/webp/what-awaits-you/extreme.webp");
 
   @include mobile {
@@ -252,6 +276,10 @@
   }
 }
 .no-webp .what-awaits-you__image-constant-stress {
+  &.lazy {
+    background-image: none;
+  }
+
   background-image: url("../img/what-awaits-you/constant-stress.png");
 
   @include mobile {
@@ -259,6 +287,10 @@
   }
 }
 .webp .what-awaits-you__image-constant-stress {
+  &.lazy {
+    background-image: none;
+  }
+
   background-image: url("../img/webp/what-awaits-you/constant-stress.webp");
 
   @include mobile {

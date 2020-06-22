@@ -62,9 +62,17 @@
   }
 }
 .no-webp .instructor__photo {
+  &.lazy {
+    background-image: none;
+  }
+
   background-image: url("../img/instructor/photo.png");
 }
 .webp .instructor__photo {
+  &.lazy {
+    background-image: none;
+  }
+
   background-image: url("../img/webp/instructor/photo.webp");
 }
 .instructor__name {

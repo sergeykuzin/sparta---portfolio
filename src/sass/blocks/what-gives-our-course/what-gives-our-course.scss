@@ -16,6 +16,10 @@
   }
 }
 .no-webp .what-gives-our-course {
+  &.lazy {
+    background-image: none;
+  }
+
   background-image: url("../img/what-gives-our-course/main-background-desktop.png");
 
   @include tablet-width-only {
@@ -27,6 +31,10 @@
   }
 }
 .webp .what-gives-our-course {
+  &.lazy {
+    background-image: none;
+  }
+
   background-image: url("../img/webp/what-gives-our-course/main-background-desktop.webp");
 
   @include tablet-width-only {
@@ -69,6 +77,10 @@
   }
 }
 .no-webp .what-gives-our-course-wrapper {
+  &.lazy {
+    background-image: none;
+  }
+
   background-image: url("../img/what-gives-our-course/red-border-desktop.png");
 
   @include tablet-width-only {
@@ -80,6 +92,10 @@
   }
 }
 .webp .what-gives-our-course-wrapper {
+  &.lazy {
+    background-image: none;
+  }
+
   background-image: url("../img/webp/what-gives-our-course/red-border-desktop.webp");
 
   @include tablet-width-only {
@@ -118,6 +134,10 @@
   }
 }
 .no-webp .what-gives-our-course__title {
+  &.lazy {
+    background-image: none;
+  }
+
   background-image: url("../img/what-gives-our-course/what-gives-our-course-background-desktop.png");
 
   @include tablet-width-only {
@@ -129,6 +149,10 @@
   }
 }
 .webp .what-gives-our-course__title {
+  &.lazy {
+    background-image: none;
+  }
+
   background-image: url("../img/webp/what-gives-our-course/what-gives-our-course-background-desktop.webp");
 
   @include tablet-width-only {
@@ -258,7 +282,6 @@
     height: 143px;
     margin-right: 40px;
     background-image: url("../img/what-gives-our-course/icon-exclamation-mark.png");
-    background-image: url("../img/webp/what-gives-our-course/icon-exclamation-mark.webp");
     background-repeat: no-repeat;
 
     @include tablet-width-only {
@@ -283,11 +306,17 @@
   }
 }
 .no-webp .what-will-not-be {
+  &.lazy:before {
+    background-image: none;
+  }
   &:before {
     background-image: url("../img/what-gives-our-course/icon-exclamation-mark.png");
   }
 }
 .webp .what-will-not-be {
+  &.lazy:before {
+    background-image: none;
+  }
   &:before {
     background-image: url("../img/webp/what-gives-our-course/icon-exclamation-mark.webp");
   }

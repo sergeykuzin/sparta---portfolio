@@ -15,6 +15,10 @@
   }
 }
 .no-webp .have-questions {
+  &.lazy {
+    background-image: none;
+  }
+
   background-image: url("../img/have-questions/have-questions-background-desktop.png");
 
   @include tablet-width-only {
@@ -26,6 +30,10 @@
   }
 }
 .webp .have-questions {
+  &.lazy {
+    background-image: none;
+  }
+
   background-image: url("../img/webp/have-questions/have-questions-background-desktop.webp");
 
   @include tablet-width-only {

@@ -18,6 +18,10 @@
   }
 }
 .no-webp .testimonials {
+  &.lazy {
+    background-image: none;
+  }
+
   background-image: url("../img/testimonials/main-background-desktop.png");
 
   @include tablet-width-only {
@@ -29,6 +33,10 @@
   }
 }
 .webp .testimonials {
+  &.lazy {
+    background-image: none;
+  }
+
   background-image: url("../img/webp/testimonials/main-background-desktop.webp");
 
   @include tablet-width-only {
@@ -107,6 +115,10 @@
   }
 }
 .no-webp .video-player-wrapper {
+  &.lazy {
+    background-image: none;
+  }
+
   background-image: url("../img/testimonials/media-player-desktop.jpg");
 
   @include tablet-width-only {
@@ -118,6 +130,10 @@
   }
 }
 .webp .video-player-wrapper {
+  &.lazy {
+    background-image: none;
+  }
+
   background-image: url("../img/webp/testimonials/media-player-desktop.webp");
 
   @include tablet-width-only {

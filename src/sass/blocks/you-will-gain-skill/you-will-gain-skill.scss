@@ -16,6 +16,10 @@
   }
 }
 .no-webp .you-will-gain-skill {
+  &.lazy {
+    background-image: none;
+  }
+
   background-image: url("../img/you-will-gain-skill/man-with-map-desktop.png");
 
   @include tablet-width-only {
@@ -27,6 +31,10 @@
   }
 }
 .webp .you-will-gain-skill {
+  &.lazy {
+    background-image: none;
+  }
+
   background-image: url("../img/webp/you-will-gain-skill/man-with-map-desktop.webp");
 
   @include tablet-width-only {

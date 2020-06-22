@@ -17,6 +17,10 @@
   }
 }
 .no-webp .course-program {
+  &.lazy {
+    background-image: none;
+  }
+
   background-image: url("../img/course-program/main-background-desktop.png");
 
   @include tablet-width-only {
@@ -28,6 +32,10 @@
   }
 }
 .webp .course-program {
+  &.lazy {
+    background-image: none;
+  }
+
   background-image: url("../img/webp/course-program/main-background-desktop.webp");
 
   @include tablet-width-only {
