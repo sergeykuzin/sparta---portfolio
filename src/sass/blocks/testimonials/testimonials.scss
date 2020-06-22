@@ -29,14 +29,14 @@
   }
 }
 .webp .testimonials {
-  background-image: url("../img/testimonials/main-background-desktop.webp");
+  background-image: url("../img/webp/testimonials/main-background-desktop.webp");
 
   @include tablet-width-only {
-    background-image: url("../img/testimonials/main-background-tablet.webp");
+    background-image: url("../img/webp/testimonials/main-background-tablet.webp");
   }
 
   @include mobile-width-only {
-    background-image: url("../img/testimonials/main-background-mobile.webp");
+    background-image: url("../img/webp/testimonials/main-background-mobile.webp");
   }
 }
 .testimonials__title {
