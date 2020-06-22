@@ -34,7 +34,7 @@ gulp.task('createWebp', () => gulp
     '!./src/img/icon-raster/**',
     '!./src/img/icon-vector/**',
   ], { nodir: true })
-  .pipe(webp({ quality: 90 }))
+  .pipe(webp({ quality: 80 }))
   .pipe(gulp.dest('./src/img/webp/')));
 
 gulp.task('copyImage', () => gulp
@@ -106,7 +106,7 @@ gulp.task('build-prod-js', () => gulp
     webpack({
       mode: 'production',
       output: {
-        filename: 'main.js',
+        filename: './js/main.js',
       },
       module: {
         rules: [
