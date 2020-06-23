@@ -194,6 +194,10 @@
   }
 }
 .testimonials__item {
+  &:not(.swiper-slide-active) {
+    font-size: 0;
+  }
+
   position: relative;
   display: flex;
   max-width: 100%;

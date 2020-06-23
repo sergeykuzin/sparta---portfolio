@@ -1,6 +1,6 @@
 import intersectionObserverPolyfill from 'intersection-observer/intersection-observer';
 import YoutubeVideoPlayer from './modules/YoutubeVideoPlayer';
-import TestimonialsSlider from './modules/TestimonialsSlider';
+import testimonialsSlider from './modules/testimonialsSlider';
 import FeedbackForm from './modules/FeedbackForm';
 import LazyLoad from './modules/LazyLoad';
 
