@@ -112,7 +112,7 @@ gulp.task('build-prod-js', () => gulp
         rules: [
           {
             test: /\.m?js$/,
-            exclude: /(node_modules|bower_components)/,
+            exclude: /node_modules[\/\\](?!(swiper|dom7)[\/\\])/,
             use: {
               loader: 'babel-loader',
               options: {
