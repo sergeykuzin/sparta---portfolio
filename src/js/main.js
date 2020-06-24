@@ -1,8 +1,8 @@
 import intersectionObserverPolyfill from 'intersection-observer/intersection-observer';
-import YoutubeVideoPlayer from './modules/YoutubeVideoPlayer';
+import youtubeVideoPlayer from './modules/youtubeVideoPlayer';
 import testimonialsSlider from './modules/testimonialsSlider';
 import FeedbackForm from './modules/FeedbackForm';
-import LazyLoad from './modules/LazyLoad';
+import lazyLoad from './modules/lazyLoad';
 
 const feedbackForm = new FeedbackForm({
   formOpeningElements: '.open-feedback-form-js',
