@@ -42,6 +42,6 @@
   "dependencies": {
     "gulp-webp": "^4.0.1",
     "intersection-observer": "^0.10.0",
-    "swiper": "^5.4.5"
+    "swiper": "^6.5.1"
   }
 }
